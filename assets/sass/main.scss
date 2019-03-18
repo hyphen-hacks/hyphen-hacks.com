@@ -5,8 +5,11 @@
 $navy: #34495E;
 $navy-dark: #2C3E50;
 $gold: #DC8F2A;
+$gold-darker: darken($gold, 10%);
 
 $primary: $gold;
+$link: $primary;
+$link-hover: $gold-darker;
 $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
