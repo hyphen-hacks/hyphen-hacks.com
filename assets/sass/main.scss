@@ -31,6 +31,10 @@ $navbar-height: 6rem;
 
 $button-border-width: 4px;
 
+.button, a {
+    transition: background-color 0.1s, color 0.1s;
+}
+
 @import "bulma-0.7.4/bulma.sass";
 
 @media screen and (min-width: $tablet) and (max-width: $fullhd - 1px) {
