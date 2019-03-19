@@ -7,6 +7,7 @@ $gold-lighter: lighten($gold, 20%);
 $gold-darker: darken($gold, 10%);
 
 $primary: $gold;
+$primary-invert: $navy-dark;
 $link: $gold;
 $link-hover: $gold-darker;
 $family-primary: "Chivo", sans-serif;
@@ -29,8 +30,6 @@ $navbar-item-img-max-height: 50px;
 $navbar-height: 6rem;
 
 $button-border-width: 4px;
-$button-padding-horizontal: 1.5em;
-$button-padding-vertical: calc(1.5em - #{$button-border-width});
 
 @import "bulma-0.7.4/bulma.sass";
 
