@@ -3,13 +3,15 @@
 $navy: #34495E;
 $navy-dark: #2C3E50;
 $gold: #DC8F2A;
-$gold-lighter: lighten($gold, 20%);
-$gold-darker: darken($gold, 10%);
+$gold-light: lighten($gold, 20%);
+$gold-dark: darken($gold, 10%);
+$green: #2ecc71;
+$green-dark: darken($green, 10%);
 
 $primary: $gold;
 $primary-invert: $navy-dark;
-$link: $gold;
-$link-hover: $gold-darker;
+$link: $green;
+$link-hover: $green-dark;
 $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
