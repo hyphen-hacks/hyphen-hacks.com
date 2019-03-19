@@ -53,3 +53,9 @@ $button-padding-vertical: calc(1.5em - #{$button-border-width});
         background-size: 700px;
     }
 }
+
+@include mobile {
+    .is-size-1 {
+        font-size: $size-2 !important;
+    }
+}
