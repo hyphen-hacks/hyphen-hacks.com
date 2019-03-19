@@ -1,12 +1,13 @@
-let breakpointElem = document.getElementById('scroll-breakpoint'),
-    breakpointOffset = breakpointElem.offsetTop,
+const breakpointElem = document.getElementById('scroll-breakpoint'),
     navElem = document.getElementById('navbar');
 
-window.addEventListener('resize', function() {
+let breakpointOffset = breakpointElem.offsetTop;
+
+window.addEventListener('resize', () => {
     breakpointOffset = breakpointElem.offsetTop;
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
     if (window.pageYOffset > breakpointOffset) {
         navElem.classList.remove('navbar-hidden');
     } else {
