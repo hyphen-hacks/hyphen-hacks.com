@@ -1,15 +1,8 @@
 {{ define "main" }}
 
-<section class="hero is-fullheight">
-    <div class="hero-head">
-        <div class="level">
-            <div class="level-left">
-                <figure>
-                    <img src="/img/logo.svg" width="50">
-                </figure>
-            </div>
-        </div>
-    </div>
+{{ partial "navbar" . }}
+
+<section class="hero is-fullheight-with-navbar">
     <div class="hero-body" id="hero">
         <div class="column is-offset-1">
             <h1 class="title is-size-1 is-family-secondary">
@@ -18,6 +11,7 @@
             <h2 class="subtitle is-size-4 has-text-primary">
                 {{ partial "subtitle" . }}
             </h2>
+            <a id="scroll-breakpoint"></a>
             <p class="is-size-5">
                 OCTOBER 19-20, 2019<br>
                 Lick-Wilmerding High School (<a href="https://goo.gl/maps/Ty2LYMEwmC52" target="_blank">view map</a>)
@@ -33,5 +27,15 @@
     </div>
 </section>
 
-{{ partial "navbar" . }}
+<section class="hero is-dark is-large is-bold">
+    <div class="hero-body">
+        <h1 class="title">temporary section to make the page taller</h1>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "extraJS" }}
+{{ $homeJS := resources.Get "js/home.js" | resources.Fingerprint }}
+<script src="{{ $homeJS.Permalink }}" integrity="{{ $homeJS.Data.Integrity }}"></script>
 {{ end }}
