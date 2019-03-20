@@ -75,24 +75,26 @@ $button-border-width: 4px;
     }
 }
 
-@include desktop {
-    .navbar {
-        transition: background-color 0.1s;
+.navbar {
+    transition: background-color 0.1s;
 
+    .navbar-brand h3 {
+        position: relative;
+        top: 0;
+        opacity: 1;
+        transition: top 0.1s, opacity 0.1s;
+    }
+
+    &.navbar-hidden {
         .navbar-brand h3 {
-            position: relative;
-            top: 0;
-            opacity: 1;
-            transition: top 0.1s, opacity 0.1s;
+            top: 1rem;
+            opacity: 0;
         }
+    }
+}
 
-        &.navbar-hidden {
-            background-color: transparent !important;
-        
-            .navbar-brand h3 {
-                top: 1rem;
-                opacity: 0;
-            }
-        }
+@include desktop {
+    .navbar.navbar-hidden {
+        background-color: transparent !important;
     }
 }
