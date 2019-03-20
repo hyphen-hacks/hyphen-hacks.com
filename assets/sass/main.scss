@@ -77,42 +77,21 @@ $button-border-width: 4px;
 
 @include desktop {
     .navbar {
-        transition: background-color 0.25s;
+        transition: background-color 0.1s;
 
-        .navbar-brand {
+        .navbar-brand h3 {
             position: relative;
-            bottom: 0;
-            transition: bottom 0.25s;
-
-            img {
-                position: relative;
-                top: 0;
-                transition: top 0.25s;
-            }
-        }
-
-        .navbar-menu {
-            position: relative;
-            bottom: 0;
-            transition: bottom 0.25s;
+            top: 0;
+            opacity: 1;
+            transition: top 0.1s, opacity 0.1s;
         }
 
         &.navbar-hidden {
             background-color: transparent !important;
         
-            .navbar-brand {
-                position: relative;
-                bottom: $navbar-height;
-        
-                img {
-                    position: relative;
-                    top: $navbar-height;
-                }
-            }
-        
-            .navbar-menu {
-                position: relative;
-                bottom: $navbar-height;
+            .navbar-brand h3 {
+                top: 1rem;
+                opacity: 0;
             }
         }
     }
