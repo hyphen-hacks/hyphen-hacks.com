@@ -1,9 +1,0 @@
----
-label: No front matter
-hide_body: false
-fields:
-- type: text
-  label: sflkjad
-  name: sflkjad
-pages:
-- layouts/partials/subtitle.html
