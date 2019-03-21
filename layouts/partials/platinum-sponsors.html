@@ -1,0 +1,10 @@
+{{ if .Site.Data.sponsors.platinum }}
+<h5 class="is-size-5">Platinum Sponsor{{ if (gt (len .Site.Data.sponsors.platinum) 1) }}s{{ end }}</h5>
+<div class="columns">
+    {{ range .Site.Data.sponsors.platinum }}
+    <div class="column">
+        <a href="{{ .url }}" target="_blank"><img src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}"></a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

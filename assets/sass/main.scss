@@ -60,15 +60,6 @@ $button-border-width: 4px;
     }
 }
 
-@include fullhd {
-    #hero {
-        background-image: url('/img/pair-programming.svg');
-        background-repeat: no-repeat;
-        background-position: 80% center;
-        background-size: 700px;
-    }
-}
-
 @include mobile {
     .is-size-1 {
         font-size: $size-2 !important;

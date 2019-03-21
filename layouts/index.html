@@ -4,8 +4,8 @@
 
 <section class="hero is-fullheight-with-navbar">
     <div class="hero-body" id="hero">
-        <div class="column is-12 columns is-desktop">
-            <div class="column is-offset-1">
+        <div class="column is-12 columns is-desktop is-multiline">
+            <div class="column is-11-desktop is-half-fullhd is-offset-1">
                 <h1 class="title is-size-1 is-family-secondary">
                     Hyphen-Hacks
                 </h1>
@@ -20,7 +20,8 @@
                 {{ partial "apply-volunteer-buttons" . }}
             </div>
             <div class="column">
-                skldfjlk
+                <img src="/img/pair-programming.svg" class="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only">
+                {{ partial "platinum-sponsors" . }}
             </div>
         </div>
     </div>
