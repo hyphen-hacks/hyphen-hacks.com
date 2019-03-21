@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: layouts/partials/subtitle.html
+  label: Subtitle
+  match: "**/*"
 - type: directory
   path: content
   label: Pages
