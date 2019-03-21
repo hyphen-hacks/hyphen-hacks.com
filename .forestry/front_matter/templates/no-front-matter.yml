@@ -1,4 +1,7 @@
 ---
 label: No front matter
 hide_body: false
-fields: []
+fields:
+- type: text
+  label: sflkjad
+  name: sflkjad
