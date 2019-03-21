@@ -5,3 +5,5 @@ fields:
 - type: text
   label: sflkjad
   name: sflkjad
+pages:
+- layouts/partials/subtitle.html
