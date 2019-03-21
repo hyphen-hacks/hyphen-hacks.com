@@ -7,7 +7,6 @@ sections:
 - type: document
   path: layouts/partials/subtitle.html
   label: Subtitle
-  match: "**/*"
 - type: directory
   path: content
   label: Pages
