@@ -1,7 +1,7 @@
-+++
-title = "FAQ"
-url = "/faq"
-+++
+---
+title: "FAQ"
+url: "/faq"
+---
 
 # Is this an actual event?
 

@@ -1,10 +1,10 @@
 const breakpointElem = document.getElementById('scroll-breakpoint'),
     navElem = document.getElementById('navbar');
 
-let breakpointOffset = breakpointElem.offsetTop;
+let breakpointOffset = breakpointElem.getBoundingClientRect().top;
 
 window.addEventListener('resize', () => {
-    breakpointOffset = breakpointElem.offsetTop;
+    breakpointOffset = breakpointElem.getBoundingClientRect().top;
 });
 
 window.addEventListener('scroll', () => {
@@ -13,4 +13,9 @@ window.addEventListener('scroll', () => {
     } else {
         navElem.classList.add('navbar-hidden');
     }
+
+    let opacity = Math.min(1, Math.max(0, window.pageYOffset / breakpointOffset)),
+        color = `rgba(44, 62, 80, ${opacity})`;
+
+    navElem.style.backgroundColor = color;
 }, false);
