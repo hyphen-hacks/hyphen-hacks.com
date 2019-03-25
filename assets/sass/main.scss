@@ -16,7 +16,7 @@ $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
 $body-color: white;
-$text-strong: $gold;
+$text-strong: white;
 $title-color: white;
 $size-1: 96px;
 $size-2: 65px;
@@ -81,5 +81,17 @@ $button-border-width: 4px;
             top: 1rem;
             opacity: 0;
         }
+    }
+}
+
+$thick-gold-underline: linear-gradient(transparent 75%, $gold 75%);
+
+.gold-background {
+    background-image: $thick-gold-underline;
+}
+
+.content {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $family-secondary;
     }
 }

@@ -1,0 +1,18 @@
+{{ define "title" }}{{ .Title }} &bullet; Hyphen-Hacks{{ end }}
+
+{{ define "main" }}
+
+{{ partial "navbar" . }}
+
+<section class="section">
+    <div class="container">
+        <h1 class="is-family-secondary title is-size-1 has-text-centered">
+            <span class="gold-background">{{ .Title }}</span>
+        </h1>
+        <article class="content is-size-5">
+            {{ .Content }}
+        </article>
+    </div>
+</section>
+
+{{ end }}
