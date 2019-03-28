@@ -5,13 +5,13 @@ $navy-dark: #2C3E50;
 $gold: #DC8F2A;
 $gold-light: lighten($gold, 20%);
 $gold-dark: darken($gold, 10%);
-$green: #2ecc71;
-$green-dark: darken($green, 10%);
+$blue: #67a6e6;
+$blue-dark: darken($blue, 10%);
 
 $primary: $gold;
 $primary-invert: $navy-dark;
-$link: $green;
-$link-hover: $green-dark;
+$link: $blue;
+$link-hover: $blue-dark;
 $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
@@ -86,10 +86,23 @@ $footer-background-color: $navy-dark;
     }
 }
 
-$thick-gold-underline: linear-gradient(transparent 75%, $gold 75%);
+$gold-stripe: linear-gradient(transparent 75%, $gold 75%);
 
-.gold-background {
-    background-image: $thick-gold-underline;
+@mixin gold-stripe {
+    background-image: linear-gradient(transparent 75%, $gold 75%);
+}
+
+.gold-stripe {
+    @include gold-stripe;
+}
+
+a.navbar-item:hover {
+    color: white;
+    background-color: transparent !important;
+
+    span {
+        @include gold-stripe;
+    }
 }
 
 .content {
