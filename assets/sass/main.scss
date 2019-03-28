@@ -64,6 +64,16 @@ $footer-background-color: $navy-dark;
     }
 }
 
+@media screen and (min-width: $tablet) and (max-width: $fullhd - 1px) {
+    #mission {
+        background-image: linear-gradient(transparentize($navy, 0.3), transparentize($navy, 0.3)), url('/img/dreamer.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 700px;
+        min-height: 480px;
+    }
+}
+
 @include mobile {
     .is-size-1, .title.is-1, .subtitle.is-1 {
         font-size: $size-2 !important;
