@@ -6,12 +6,14 @@
 
 <section class="section">
     <div class="container">
-        <h1 class="is-family-secondary title is-size-1 has-text-centered">
+        <h1 class="is-family-secondary title is-size-1 has-text-centered is-uppercase">
             <span class="gold-stripe">{{ .Title }}</span>
         </h1>
-        <article class="content is-size-5">
-            {{ .Content }}
-        </article>
+        <section class="section">
+            <article class="content is-size-5">
+                {{ .Content }}
+            </article>
+        </section>
     </div>
 </section>
 

@@ -8,7 +8,7 @@
         {{/* pages can override the title, but the sitewide title is the default */}}
         <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:400,700|Space+Mono:700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:400|Space+Mono:700">
         {{/* compile SCSS to CSS and minify it */}}
         {{ $style := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed") }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
