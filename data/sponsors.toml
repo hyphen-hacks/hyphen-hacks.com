@@ -7,3 +7,15 @@ logo = ""
 name = "Graphite Writer"
 url = "https://graphitewriter.com"
 logo = "/img/sponsor-logos/graphitewriter.png"
+
+[[gold]]
+name = "Random Sponsor"
+url = "https://example.com"
+
+[[silver]]
+name = "Silver Sponsor"
+url = "https://example.com"
+
+[[bronze]]
+name = "Bronze Sponsor"
+url = "https://example.com"

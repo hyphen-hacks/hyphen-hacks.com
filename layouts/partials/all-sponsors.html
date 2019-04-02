@@ -1,0 +1,43 @@
+{{ if .Site.Data.sponsors.platinum }}
+<div class="box">
+    <h5 class="is-size-4 is-uppercase">Platinum</h5>
+    <div class="columns is-multiline is-centered">
+        {{ range .Site.Data.sponsors.platinum }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "half") }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+{{ if .Site.Data.sponsors.gold }}
+<div class="box">
+    <h5 class="is-size-4 is-uppercase">Gold</h5>
+    <div class="columns is-multiline is-centered">
+        {{ range .Site.Data.sponsors.gold }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "third") }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+{{ if .Site.Data.sponsors.silver }}
+<div class="box">
+    <h5 class="is-size-4 is-uppercase">Silver</h5>
+    <div class="columns is-multiline is-centered">
+        {{ range .Site.Data.sponsors.silver }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "quarter") }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+{{ if .Site.Data.sponsors.bronze }}
+<div class="box">
+    <h5 class="is-size-4 is-uppercase">Bronze</h5>
+    <div class="columns is-multiline is-centered">
+        {{ range .Site.Data.sponsors.bronze }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "fifth") }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
