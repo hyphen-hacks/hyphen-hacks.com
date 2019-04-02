@@ -14,7 +14,7 @@
     <h5 class="is-size-4 is-uppercase">Gold</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.gold }}
-        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "third") }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-third") }}
         {{ end }}
     </div>
 </div>
@@ -25,7 +25,7 @@
     <h5 class="is-size-4 is-uppercase">Silver</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.silver }}
-        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "quarter") }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-quarter") }}
         {{ end }}
     </div>
 </div>
@@ -36,7 +36,7 @@
     <h5 class="is-size-4 is-uppercase">Bronze</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.bronze }}
-        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "fifth") }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-fifth") }}
         {{ end }}
     </div>
 </div>

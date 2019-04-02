@@ -11,11 +11,14 @@ logo = "/img/sponsor-logos/graphitewriter.png"
 [[gold]]
 name = "Random Sponsor"
 url = "https://example.com"
+logo = "/img/sponsor-logos/random-sponsor.png"
 
 [[silver]]
 name = "Silver Sponsor"
 url = "https://example.com"
+logo = "/img/sponsor-logos/silver-sponsor.png"
 
 [[bronze]]
 name = "Bronze Sponsor"
 url = "https://example.com"
+logo = "/img/sponsor-logos/bronze-sponsor.png"
