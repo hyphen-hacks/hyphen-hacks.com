@@ -17,6 +17,8 @@
         {{ block "main" . }}
         {{ end }}
 
+        {{ partial "footer" . }}
+
         {{ $commonJS := resources.Get "js/common.js" | resources.Fingerprint }}
         <script src="{{ $commonJS.Permalink }}" integrity="{{ $commonJS.Data.Integrity }}"></script>
 
