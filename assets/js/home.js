@@ -3,23 +3,32 @@ const breakpointElem = document.getElementById('scroll-breakpoint'),
 
 let breakpointOffset = breakpointElem.offsetTop;
 
-function update() {
-    if (window.pageYOffset > breakpointOffset) {
-        navElem.classList.remove('navbar-hidden');
+function update(isIntersectionObserver, entries) {
+    if (isIntersectionObserver === true) {
+        if (entries[0].isIntersecting) {
+            navElem.classList.add('navbar-hidden');
+        } else {
+            navElem.classList.remove('navbar-hidden');
+        }
     } else {
-        navElem.classList.add('navbar-hidden');
+        if (window.pageYOffset > breakpointOffset) {
+            navElem.classList.remove('navbar-hidden');
+            return;
+        } else {
+            navElem.classList.add('navbar-hidden');
+        }
     }
-
-    let opacity = Math.min(1, Math.max(0, window.pageYOffset / breakpointOffset)),
-        color = `rgba(44, 62, 80, ${opacity})`;
-
-    navElem.style.backgroundColor = color;
 }
 
 window.addEventListener('resize', () => {
     breakpointOffset = breakpointElem.offsetTop;
 });
 
-window.addEventListener('scroll', update, false);
+if (typeof window.IntersectionObserver == 'function') {
+    let observer = new IntersectionObserver(update.bind(null, true));
+    observer.observe(breakpointElem);
+} else {
+    window.addEventListener('scroll', update.bind(null, false), false);
+}
 
-update();
+update(false);

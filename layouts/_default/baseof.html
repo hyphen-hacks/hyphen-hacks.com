@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:400|Space+Mono:700">
         {{/* compile SCSS to CSS and minify it */}}
-        {{ $style := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed") }}
+        {{ $style := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed") | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
     </head>
     <body>
@@ -19,7 +19,7 @@
 
         {{ partial "footer" . }}
 
-        {{ $commonJS := resources.Get "js/common.js" | resources.Fingerprint }}
+        {{ $commonJS := resources.Get "js/common.js" | resources.Minify | resources.Fingerprint }}
         <script src="{{ $commonJS.Permalink }}" integrity="{{ $commonJS.Data.Integrity }}"></script>
 
         {{ block "extraJS" . }}

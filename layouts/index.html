@@ -89,6 +89,6 @@
 {{ end }}
 
 {{ define "extraJS" }}
-{{ $homeJS := resources.Get "js/home.js" | resources.Fingerprint }}
+{{ $homeJS := resources.Get "js/home.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $homeJS.Permalink }}" integrity="{{ $homeJS.Data.Integrity }}"></script>
 {{ end }}
