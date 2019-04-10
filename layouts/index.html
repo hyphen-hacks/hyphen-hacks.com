@@ -18,7 +18,9 @@
                         Date TBA<br>
                         Lick-Wilmerding High School (<a href="https://goo.gl/maps/Ty2LYMEwmC52" target="_blank">view map</a>)
                     </p>
-                    {{ partial "apply-volunteer-buttons" . }}
+                    <div class="m-t-lg">
+                        {{ partial "apply-volunteer-buttons" . }}
+                    </div>
                 </div>
                 <div class="column is-offset-1-fullhd">
                     <img src="/img/pair-programming.svg" class="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only">
@@ -27,7 +29,7 @@
             </div>
         </div>
         <div class="hero-foot">
-            <div class="has-text-centered is-uppercase">
+            <div class="has-text-centered is-uppercase m-b-lg">
                 <p>Learn More</p>
                 &#9660;
             </div>
@@ -51,13 +53,9 @@
     </section>
 
     <section class="section" id="2018-recap">
-        <section class="hero is-medium">
-            <div class="hero-body">
-                <h1 class="is-family-secondary is-size-1 is-uppercase has-text-centered">
-                    <span class="gold-stripe">2018 Recap</span>
-                </h1>
-            </div>
-        </section>
+        <h1 class="is-family-secondary is-size-1 is-uppercase has-text-centered m-b-xl">
+            <span class="gold-stripe">2018 Recap</span>
+        </h1>
         <div class="columns is-size-3 is-family-secondary">
             <div class="column has-text-centered">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.prizes }}</h2>
@@ -74,25 +72,21 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="box columns is-vcentered">
+    <section class="section m-t-xl m-b-xl">
+        <div class="box columns is-vcentered p-t-xl p-b-xl">
             <div class="column is-two-thirds">
                 <h1 class="has-text-primary is-family-secondary is-size-1 is-uppercase">Sign up for free</h1>
             </div>
             <div class="column has-text-centered">
-                <a href="/apply" class="button is-uppercase is-size-4 is-primary">Apply Now</a>
+                <a href="/apply" class="button is-uppercase is-size-4 is-dark has-text-primary">Apply Now</a>
             </div>
         </div>
     </section>
 
     <section class="section" id="sponsors">
-        <section class="hero is-medium">
-            <div class="hero-body">
-                <h1 class="is-family-secondary is-size-1 is-uppercase has-text-centered">
-                    <span class="gold-stripe">Sponsors</span>
-                </h1>
-            </div>
-        </section>
+        <h1 class="is-family-secondary is-size-1 is-uppercase has-text-centered m-b-xl">
+            <span class="gold-stripe">Sponsors</span>
+        </h1>
         {{ partial "all-sponsors" . }}
     </section>
 </main>

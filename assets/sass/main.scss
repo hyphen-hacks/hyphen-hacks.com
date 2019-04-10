@@ -12,6 +12,7 @@ $primary: $gold;
 $primary-invert: $navy-dark;
 $link: $blue;
 $link-hover: $blue-dark;
+$dark: $navy;
 $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
@@ -39,18 +40,6 @@ $footer-background-color: $navy-dark;
 
 .button, a {
     transition: background-color 0.1s, color 0.1s;
-}
-
-#hero p {
-    padding-top: 1em;
-}
-
-#hero .buttons {
-    padding-top: 2em;
-}
-
-#hero+.hero-foot {
-    margin-bottom: 1em;
 }
 
 @import "bulma-0.7.4/bulma.sass";
@@ -126,3 +115,5 @@ a.navbar-item:hover {
         font-family: $family-secondary;
     }
 }
+
+@import "spacing.scss";
