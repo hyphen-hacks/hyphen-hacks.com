@@ -100,8 +100,12 @@ $footer-background-color: $navy-dark;
 
 $gold-stripe: linear-gradient(transparent 75%, $gold 75%);
 
+@mixin stripe($color) {
+    background-image: linear-gradient(transparent 75%, $color 75%);
+}
+
 @mixin gold-stripe {
-    background-image: linear-gradient(transparent 75%, $gold 75%);
+    @include stripe($gold);
 }
 
 .gold-stripe {
