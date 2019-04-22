@@ -117,3 +117,12 @@ a.navbar-item:hover {
 }
 
 @import "spacing.scss";
+@import "anims.scss";
+
+#recap-students {
+    transition-delay: 0.1s;
+}
+
+#recap-mentors {
+    transition-delay: 0.2s;
+}

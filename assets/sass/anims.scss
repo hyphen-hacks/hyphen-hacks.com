@@ -1,0 +1,33 @@
+$origins: (
+    'top',
+    'right',
+    'bottom',
+    'left'
+);
+
+$bounce-out: cubic-bezier(.45, 1.8, .75, 1);
+
+@each $origin in $origins {
+    .enter-from-#{$origin} {
+        position: relative;
+        #{$origin}: -100px;
+        opacity: 0;
+        transition: #{$origin} 0.5s ease-out, opacity 0.5s ease-out;
+
+        &.has-entered {
+            #{$origin}: 0;
+            opacity: 1;
+        }
+    }
+}
+
+.pop-in {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 0.5s $bounce-out, opacity 0.5s ease-out;
+
+    &.has-popped-in {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -41,7 +41,7 @@
             <div class="column is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only is-5-widescreen">
                 <img src="/img/dreamer.svg">
             </div>
-            <div class="column is-offset-1-widescreen">
+            <div class="column is-offset-1-widescreen enter-from-right" id="mission-text">
                 <h1 class="title is-1 is-size-2-mobile is-family-secondary is-uppercase has-text-centered-until-widescreen">
                     <span class="gold-stripe">Mission</span>
                 </h1>
@@ -57,15 +57,15 @@
             <span class="gold-stripe">2018 Recap</span>
         </h1>
         <div class="columns is-size-3 is-family-secondary">
-            <div class="column has-text-centered">
+            <div class="column has-text-centered pop-in" id="recap-prizes">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.prizes }}</h2>
                 In Prizes
             </div>
-            <div class="column has-text-centered">
+            <div class="column has-text-centered pop-in" id="recap-students">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.students }}</h2>
                 Students
             </div>
-            <div class="column has-text-centered">
+            <div class="column has-text-centered pop-in" id="recap-mentors">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.mentors }}</h2>
                 Experienced Mentors
             </div>
@@ -94,6 +94,9 @@
 {{ end }}
 
 {{ define "extraJS" }}
-{{ $homeJS := resources.Get "js/home.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $homeJS.Permalink }}" integrity="{{ $homeJS.Data.Integrity }}"></script>
+{{ $homeJS := resources.Get "js/home.js" }}
+{{ $intersectionObserverJS := resources.Get "js/intersection-observer.js" }}
+{{ $scrollclassJS := resources.Get "js/scrollclass.js" }}
+{{ $bundleJS := slice $homeJS $intersectionObserverJS $scrollclassJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha256" }}
+<script src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"></script>
 {{ end }}
