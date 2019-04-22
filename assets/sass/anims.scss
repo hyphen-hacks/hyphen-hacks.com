@@ -31,3 +31,14 @@ $bounce-out: cubic-bezier(.45, 1.8, .75, 1);
         opacity: 1;
     }
 }
+
+$delays: (
+    '100',
+    '200'
+);
+
+@each $delay in $delays {
+    .delay-#{$delay} {
+        transition-delay: #{$delay}ms;
+    }
+}

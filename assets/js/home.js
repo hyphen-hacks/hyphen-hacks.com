@@ -1,3 +1,12 @@
+function popIn(id) {
+    return {
+        target: id,
+        class: 'has-popped-in',
+        threshold: 1,
+        once: true
+    }
+}
+
 scrollclass([
     {
         target: 'navbar',
@@ -10,22 +19,10 @@ scrollclass([
         threshold: 1,
         once: true
     },
-    {
-        target: 'recap-prizes',
-        class: 'has-popped-in',
-        threshold: 1,
-        once: true
-    },
-    {
-        target: 'recap-students',
-        class: 'has-popped-in',
-        threshold: 1,
-        once: true
-    },
-    {
-        target: 'recap-mentors',
-        class: 'has-popped-in',
-        threshold: 1,
-        once: true
-    }
+    popIn('recap-prizes'),
+    popIn('recap-students'),
+    popIn('recap-mentors'),
+    popIn('learn'),
+    popIn('connect'),
+    popIn('grow')
 ]);

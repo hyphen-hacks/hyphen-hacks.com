@@ -9,16 +9,16 @@ $sizes: (
     // ('xxs', 0.125),
     // ('xs', 0.25),
     // ('sm', 0.5),
-    // ('md', 1),
+    ('md', 1),
     ('lg', 2),
     ('xl', 4),
     // ('xxl', 8),
 );
 $positions: (
     ('t', 'top'),
-    // ('r', 'right'),
+    ('r', 'right'),
     ('b', 'bottom'),
-    // ('l', 'left')
+    ('l', 'left')
 );
 
 @function sizeValue($key, $value) {

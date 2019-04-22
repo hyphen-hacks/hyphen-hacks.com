@@ -52,6 +52,41 @@
         </div>
     </section>
 
+    <section class="section" id="learn-connect-grow">
+        <div class="columns">
+            <div class="column is-one-third m-r-md pop-in" id="learn">
+                <div class="box p-t-md p-r-lg p-b-lg p-l-lg">
+                    <h3 class="is-size-3 is-family-secondary is-uppercase m-b-md">
+                        <span class="gold-stripe">Learn</span>
+                    </h3>
+                    <p>
+                        {{ partial "learn" . }}
+                    </p>
+                </div>
+            </div>
+            <div class="column is-one-third m-l-md m-r-md pop-in delay-100" id="connect">
+                <div class="box p-t-md p-r-lg p-b-lg p-l-lg">
+                    <h3 class="is-size-3 is-family-secondary is-uppercase m-b-md">
+                        <span class="gold-stripe">Connect</span>
+                    </h3>
+                    <p>
+                        {{ partial "connect" . }}
+                    </p>
+                </div>
+            </div>
+            <div class="column is-one-third m-l-md pop-in delay-200" id="grow">
+                <div class="box p-t-md p-r-lg p-b-lg p-l-lg">
+                    <h3 class="is-size-3 is-family-secondary is-uppercase m-b-md">
+                        <span class="gold-stripe">Grow</span>
+                    </h3>
+                    <p>
+                        {{ partial "grow" . }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="2018-recap">
         <h1 class="is-family-secondary is-size-1 is-size-2-mobile is-uppercase has-text-centered m-b-xl">
             <span class="gold-stripe">2018 Recap</span>
@@ -61,11 +96,11 @@
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.prizes }}</h2>
                 In Prizes
             </div>
-            <div class="column has-text-centered pop-in" id="recap-students">
+            <div class="column has-text-centered pop-in delay-100" id="recap-students">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.students }}</h2>
                 Students
             </div>
-            <div class="column has-text-centered pop-in" id="recap-mentors">
+            <div class="column has-text-centered pop-in delay-200" id="recap-mentors">
                 <h2 class="is-size-2 has-text-primary">{{ .Site.Data.recap.mentors }}</h2>
                 Experienced Mentors
             </div>
