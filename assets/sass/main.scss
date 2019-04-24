@@ -7,12 +7,14 @@ $gold-light: lighten($gold, 20%);
 $gold-dark: darken($gold, 10%);
 $blue: #67a6e6;
 $blue-dark: darken($blue, 10%);
+$red: #ff6040;
 
 $primary: $gold;
 $primary-invert: $navy-dark;
 $link: $blue;
 $link-hover: $blue-dark;
 $dark: $navy;
+$danger: $red;
 $family-primary: "Chivo", sans-serif;
 $family-secondary: "Space Mono", monospace;
 $body-background-color: $navy;
