@@ -131,12 +131,12 @@ a.navbar-item:hover {
     background-position: top 0 left -100px;
     background-clip: text;
     -webkit-background-clip: text;
+    background-image: linear-gradient(120deg, transparent 35%, transparentize(white, 0.75) 45%, transparentize(white, 0.75) 55%, transparent 65%);
+    background-repeat: no-repeat;
+    background-size: 100px 100%;
+    background-color: $gold;
 
     &:hover {
-        background-image: linear-gradient(120deg, transparent 35%, transparentize(white, 0.75) 45%, transparentize(white, 0.75) 55%, transparent 65%);
-        background-repeat: no-repeat;
-        background-size: 100px;
-        background-color: $gold;
         color: transparent !important;
         transition: background-position 0.5s linear;
         background-position: top 0 right -100px;
