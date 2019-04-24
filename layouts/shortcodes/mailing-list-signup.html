@@ -1,12 +1,20 @@
 <form method="POST" action="{{/*https://api.hyphen-hacks.stomprocket.io/api/v1/addEmail*/}}" id="ml-signup-form">
     <fieldset disabled>
-        <div class="field is-horizontal has-addons">
-            <label for="email" class="label field-label is-normal">Email</label>
-            <div class="control field-body">
-                <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label for="email" class="label">Email</label>
             </div>
-            <div class="control">
-                <input type="submit" value="Sign up" class="button is-primary" id="ml-submit">
+            <div class="field-body is-normal">
+                <div class="field is-expanded">
+                    <div class="field has-addons">
+                        <p class="control is-expanded">
+                            <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
+                        </p>
+                        <p class="control">
+                            <input type="submit" value="Sign up" class="button is-primary" id="ml-submit">
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </fieldset>
