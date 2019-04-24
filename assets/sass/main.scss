@@ -19,6 +19,7 @@ $body-background-color: $navy;
 $body-color: white;
 $text-strong: white;
 $title-color: white;
+$label-color: white;
 $size-1: 96px;
 $size-2: 64px;
 $size-3: 36px;
@@ -122,6 +123,10 @@ a.navbar-item:hover {
     &:hover {
         transform: scale(1.05);
     }
+}
+
+#test-circ circle {
+    transform: translateX(100px);
 }
 
 @import "spacing.scss";
