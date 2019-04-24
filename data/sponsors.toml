@@ -1,29 +1,29 @@
-[[platinum]]
-name = "Stomp Rocket"
-url = "https://stomprocket.io"
-logo = "/img/sponsor-logos/stomp-rocket.svg"
+# [[platinum]]
+# name = "Stomp Rocket"
+# url = "https://stomprocket.io"
+# logo = "/img/sponsor-logos/stomp-rocket.svg"
 
-[[platinum]]
-name = "Graphite Writer"
-url = "https://graphitewriter.com"
-logo = "/img/sponsor-logos/graphitewriter.png"
+# [[platinum]]
+# name = "Graphite Writer"
+# url = "https://graphitewriter.com"
+# logo = "/img/sponsor-logos/graphitewriter.png"
 
-[[gold]]
-name = "Random Sponsor"
-url = "https://example.com"
-logo = "/img/sponsor-logos/random-sponsor.png"
+# [[gold]]
+# name = "Random Sponsor"
+# url = "https://example.com"
+# logo = "/img/sponsor-logos/random-sponsor.png"
 
-[[silver]]
-name = "Silver Sponsor"
-url = "https://example.com"
-logo = "/img/sponsor-logos/silver-sponsor.png"
+# [[silver]]
+# name = "Silver Sponsor"
+# url = "https://example.com"
+# logo = "/img/sponsor-logos/silver-sponsor.png"
 
-[[bronze]]
-name = "Bronze Sponsor"
-url = "https://example.com"
-logo = "/img/sponsor-logos/bronze-sponsor.png"
+# [[bronze]]
+# name = "Bronze Sponsor"
+# url = "https://example.com"
+# logo = "/img/sponsor-logos/bronze-sponsor.png"
 
-[[bronze]]
-name = "Bronze Sponsor 2"
-url = "https://example.com"
-logo = "/img/sponsor-logos/bronze-sponsor-2.png"
+# [[bronze]]
+# name = "Bronze Sponsor 2"
+# url = "https://example.com"
+# logo = "/img/sponsor-logos/bronze-sponsor-2.png"
