@@ -11,7 +11,8 @@ scrollclass([
     {
         target: 'navbar',
         class: 'navbar-hidden',
-        trigger: 'scroll-breakpoint'
+        trigger: 'scroll-breakpoint',
+        margin: '-96px'
     },
     {
         target: 'mission-text',
