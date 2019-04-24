@@ -116,5 +116,13 @@ a.navbar-item:hover {
     }
 }
 
+.lcg {
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
 @import "spacing.scss";
 @import "anims.scss";

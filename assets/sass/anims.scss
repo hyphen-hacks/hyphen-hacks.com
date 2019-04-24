@@ -22,11 +22,20 @@ $bounce-out: cubic-bezier(.45, 1.8, .75, 1);
 }
 
 .pop-in {
-    transform: scale(0.5);
-    opacity: 0;
-    transition: transform 0.5s $bounce-out, opacity 0.5s ease-out;
+    animation: pop-in 0.5s $bounce-out 0s 1 normal backwards paused;
 
     &.has-popped-in {
+        animation-play-state: running;
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
         transform: scale(1);
         opacity: 1;
     }
@@ -40,5 +49,10 @@ $delays: (
 @each $delay in $delays {
     .delay-#{$delay} {
         transition-delay: #{$delay}ms;
+
+        &.pop-in {
+            transition-delay: 0s;
+            animation-delay: #{$delay}ms;
+        }
     }
 }

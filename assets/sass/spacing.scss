@@ -44,4 +44,16 @@ $positions: (
             padding-#{$posValue}: sizeValue($sizeKey, $sizeValue);
         }
     }
+
+    @include mobile {
+        .smart-gap-#{$sizeKey}:not(:last-child) {
+            margin-bottom: #{$sizeValue}#{$sizeUnit};
+        }
+    }
+
+    @include tablet {
+        .smart-gap-#{$sizeKey}:not(:last-child) {
+            margin-right: #{$sizeValue}#{$sizeUnit};
+        }
+    }
 }
