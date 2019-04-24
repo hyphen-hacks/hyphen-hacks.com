@@ -1,0 +1,19 @@
+// https://github.com/jgthms/bulma/issues/47#issuecomment-458034454
+body {
+    &.default {
+        display: flex;
+        // use this if navbar is NOT fixed (default)
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    &.fixed {
+        display: flex;
+        // use this if navbar is fixed
+        min-height: calc(100vh - #{$navbar-height});
+        flex-direction: column;
+    }
+}
+
+#wrapper {
+    flex: 1;
+}

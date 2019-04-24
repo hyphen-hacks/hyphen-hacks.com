@@ -13,10 +13,11 @@
         {{ $style := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed") | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
     </head>
-    <body>
+    <body class="fixed">
         {{ block "main" . }}
         {{ end }}
 
+        <div id="wrapper"></div>
         {{ partial "footer" . }}
 
         {{ $commonJS := resources.Get "js/common.js" | resources.Minify | resources.Fingerprint }}
