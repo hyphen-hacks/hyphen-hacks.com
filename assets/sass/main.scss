@@ -90,10 +90,11 @@ $footer-background-color: $navy-dark;
     }
 }
 
-$gold-stripe: linear-gradient(transparent 75%, $gold 75%);
-
 @mixin stripe($color) {
-    background-image: linear-gradient(transparent 75%, $color 75%);
+    background-image: linear-gradient($color, $color);
+    background-size: 100% 25%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 @mixin gold-stripe {
@@ -104,12 +105,21 @@ $gold-stripe: linear-gradient(transparent 75%, $gold 75%);
     @include gold-stripe;
 }
 
-a.navbar-item:hover {
-    color: white;
-    background-color: transparent !important;
-
+a.navbar-item {
     span {
         @include gold-stripe;
+        background-size: 0% 25%;
+        background-position: center bottom;
+        transition: background-size 0.1s;
+    }
+
+    &:hover {
+        color: white;
+        background-color: transparent !important;
+
+        span {
+            background-size: 100% 25%;
+        }
     }
 }
 
@@ -120,7 +130,7 @@ a.navbar-item:hover {
 }
 
 .lcg {
-    transition: transform 0.25s ease-out;
+    transition: transform 0.25s;
 
     &:hover {
         transform: scale(1.05);
