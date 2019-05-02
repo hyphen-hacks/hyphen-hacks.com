@@ -14,12 +14,6 @@ scrollclass([
         trigger: 'scroll-breakpoint',
         margin: '-96px'
     },
-    {
-        target: 'mission-text',
-        class: 'has-entered',
-        threshold: 1,
-        once: true
-    },
     popIn('recap-prizes'),
     popIn('recap-students'),
     popIn('recap-mentors'),

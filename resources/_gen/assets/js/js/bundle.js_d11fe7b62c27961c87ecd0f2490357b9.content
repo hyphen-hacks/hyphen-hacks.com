@@ -37,4 +37,4 @@ if(shouldHaveClass){target.classList.add(className);target.classList.remove(alte
 return{disable(){for(let t of created){t.observer.disconnect();}}}}
 if(typeof module!='undefined'&&typeof module.exports!='undefined'){module.exports=scrollclass;}
 function popIn(id){return{target:id,class:'has-popped-in',threshold:1,once:true}}
-scrollclass([{target:'navbar',class:'navbar-hidden',trigger:'scroll-breakpoint',margin:'-96px'},{target:'mission-text',class:'has-entered',threshold:1,once:true},popIn('recap-prizes'),popIn('recap-students'),popIn('recap-mentors'),popIn('learn'),popIn('connect'),popIn('grow')]);
+scrollclass([{target:'navbar',class:'navbar-hidden',trigger:'scroll-breakpoint',margin:'-96px'},popIn('recap-prizes'),popIn('recap-students'),popIn('recap-mentors'),popIn('learn'),popIn('connect'),popIn('grow')]);
