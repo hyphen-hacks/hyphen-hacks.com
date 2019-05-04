@@ -5,28 +5,26 @@
 <main class="column is-10 is-offset-1 is-desktop">
     <section class="hero is-fullheight-with-navbar">
         <div class="hero-body" id="hero">
-            <div class="columns is-desktop is-multiline is-vcentered">
-                <div class="column is-12-desktop is-half-fullhd">
-                    <h1 class="title is-1 is-size-2-mobile is-family-secondary">
-                        <a id="scroll-breakpoint"></a>
-                        Hyphen-Hacks
-                    </h1>
-                    <h2 class="subtitle is-4 has-text-primary">
-                        {{ partial "subtitle" . }}
-                    </h2>
-                    <p class="is-size-5">
-                        Date TBA<br>
-                        Lick-Wilmerding High School (<a href="https://goo.gl/maps/Ty2LYMEwmC52" target="_blank">view map</a>)
-                    </p>
-                    <div class="m-t-lg">
-                        {{ partial "apply-volunteer-buttons" . }}
-                    </div>
-                </div>
-                <div class="column is-offset-1-fullhd">
-                    <img src="/img/pair-programming.svg" class="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only">
-                    {{ partial "platinum-sponsors" . }}
+            <div>
+                <h1 class="title is-1 is-size-2-mobile is-family-secondary">
+                    <a id="scroll-breakpoint"></a>
+                    Hyphen-Hacks
+                </h1>
+                <h2 class="subtitle is-4 has-text-primary">
+                    {{ partial "subtitle" . }}
+                </h2>
+                <p class="is-size-5">
+                    Date TBA<br>
+                    Lick-Wilmerding High School (<a href="https://goo.gl/maps/Ty2LYMEwmC52" target="_blank">view map</a>)
+                </p>
+                <div class="m-t-lg">
+                    {{ partial "apply-volunteer-buttons" . }}
                 </div>
             </div>
+            {{/*  <div class="column is-offset-1-fullhd">
+                <img src="/img/pair-programming.svg" class="is-hidden-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only">
+                {{ partial "platinum-sponsors" . }}
+            </div>  */}}
         </div>
         <div class="hero-foot">
             <div class="has-text-centered is-uppercase m-b-lg">
@@ -124,7 +122,7 @@
         </h1>
         <p class="has-text-centered is-size-5 m-b-md">
             Interested in sponsoring? Contact us at
-            <a href="mailto:sponsor@hyphen-hacks.com">sponsor@hyphen-hacks.com</a>.
+            <a href="mailto:finance@hyphen-hacks.com">finance@hyphen-hacks.com</a>.
         </p>
         {{ partial "all-sponsors" . }}
     </section>

@@ -52,7 +52,16 @@ $footer-background-color: $navy-dark;
         background-image: linear-gradient(transparentize($navy, 0.3), transparentize($navy, 0.3)), url('/img/pair-programming.svg');
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 700px;
+        background-size: auto 60vh;
+    }
+}
+
+@include widescreen {
+    #hero {
+        background-image: linear-gradient(0.25turn, transparentize($navy, 0.3), transparentize($navy, 0.3) 62.5%, transparentize($navy, 0.65) 73.75%, transparent), url('/img/pair-programming.svg');
+        background-repeat: no-repeat;
+        background-position: top left, top 50% right 0;
+        background-size: 1024px, auto 60vh;
     }
 }
 
