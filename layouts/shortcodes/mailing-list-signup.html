@@ -1,3 +1,8 @@
+{{ if .Get 0 }}
+<div class="columns is-centered">
+    <div class="column is-three-quarters is-half-widescreen">
+{{ end }}
+
 <form method="POST" action="{{/*https://api.hyphen-hacks.stomprocket.io/api/v1/addEmail*/}}" id="ml-signup-form">
     <fieldset disabled>
         <div class="field is-horizontal">
@@ -22,6 +27,11 @@
 <div class="has-text-centered m-t-md">
     <span id="ml-signup-status"></span>
 </div>
+
+{{ if .Get 0 }}
+    </div>
+</div>
+{{ end }}
 
 {{ $mlSignupJS := resources.Get "js/mailing-list-signup.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $mlSignupJS.Permalink }}" integrity="{{ $mlSignupJS.Data.Integrity }}"></script>
