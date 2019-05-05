@@ -3,26 +3,24 @@
     <div class="column is-three-quarters is-half-widescreen">
 {{ end }}
 
-<form method="POST" action="{{/*https://api.hyphen-hacks.stomprocket.io/api/v1/addEmail*/}}" id="ml-signup-form">
-    <fieldset disabled>
-        <div class="field is-horizontal">
-            <div class="field-label is-normal">
-                <label for="email" class="label">Email</label>
-            </div>
-            <div class="field-body is-normal">
-                <div class="field is-expanded">
-                    <div class="field has-addons">
-                        <p class="control is-expanded">
-                            <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
-                        </p>
-                        <p class="control">
-                            <input type="submit" value="Sign up" class="button is-primary" id="ml-submit">
-                        </p>
-                    </div>
+<form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="ml-signup-form">
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label for="email" class="label">Email</label>
+        </div>
+        <div class="field-body is-normal">
+            <div class="field is-expanded">
+                <div class="field has-addons">
+                    <p class="control is-expanded">
+                        <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
+                    </p>
+                    <p class="control">
+                        <input type="submit" value="Sign up" class="button is-primary" id="ml-submit">
+                    </p>
                 </div>
             </div>
         </div>
-    </fieldset>
+    </div>
 </form>
 <div class="has-text-centered m-t-md">
     <span id="ml-signup-status"></span>

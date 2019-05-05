@@ -1,0 +1,23 @@
+{{ define "title" }}404 Not Found &bullet; Hyphen-Hacks{{ end }}
+
+{{ define "main" }}
+
+{{ partial "navbar" . }}
+
+<section class="section">
+    <div class="container">
+        <h1 class="is-family-secondary title is-1 is-size-2-mobile has-text-centered is-uppercase">
+            <span class="gold-stripe">404 Not Found</span>
+        </h1>
+        <section class="section">
+            <article class="is-size-5 has-text-centered">
+                We couldn't find the page you were looking for. If you typed a
+                URL, make sure you typed it correctly. Otherwise, you may have
+                clicked an outdated link. <a href="/">Click here to return
+                home.</a>
+            </article>
+        </section>
+    </div>
+</section>
+
+{{ end }}
