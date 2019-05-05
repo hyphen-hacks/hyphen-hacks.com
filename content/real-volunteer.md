@@ -1,6 +1,7 @@
 ---
 title: "Volunteer"
-url: "/volunteer"
+url: "/real-volunteer"
+draft: true
 ---
 
 Thank you for your interest in volunteering for Hyphen-Hacks! We have three ways
@@ -12,10 +13,14 @@ you can help out:
   include setting out food, signing attendees in and out, and providing
   assistance to people hosting workshops.
 
-We will open applications for mentors and judges on <time datetime="2019-05-13">
-May 13, 2019</time>. Volunteer applications will open at a later date in Fall
-2019 (the exact date will be posted here once it has been determined). Check
-back here to find the applications once they are open.
+Mentor and judge applications are open! Click the button below and select
+"Mentor/Judge" to start your application.
+
+{{< eventbrite-widget true >}}
+
+Volunteer applications will open in Fall 2019 (the exact date will be posted
+here once it has been determined). Check back here to find the application once
+it is open.
 
 You can also sign up for our mailing list to be notified when they are
 available. {{< mailing-list-disclaimer >}}
