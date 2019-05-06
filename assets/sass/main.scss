@@ -23,7 +23,7 @@ $text-strong: white;
 $title-color: white;
 $label-color: white;
 $size-1: 96px;
-$size-2: 64px;
+$size-2: 56px;
 $size-3: 36px;
 $size-4: 30px;
 $size-5: 20px;
@@ -45,7 +45,31 @@ $footer-background-color: $navy-dark;
     transition: background-color 0.1s, color 0.1s;
 }
 
+// .navbar-menu {
+//     position: relative;
+//     bottom: 200px;
+//     opacity: 0;
+//     transition: bottom 0.5s, opacity 0.5s;
+//     display: none;
+
+//     &.is-active {
+//         bottom: 0px;
+//         opacity: 1;
+//         display: block;
+//     }
+// }
+
 @import "bulma-0.7.4/bulma.sass";
+
+#navbar-logo {
+    width: 50px;
+}
+
+@include mobile {
+    #navbar-logo {
+        width: 33px;
+    }
+}
 
 @media screen and (min-width: $tablet) and (max-width: $widescreen - 1px) {
     #hero {
