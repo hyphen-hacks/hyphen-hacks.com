@@ -11,3 +11,13 @@ if (navbarBurgers.length > 0) {
         });
     });
 }
+
+const deleteButtons = document.querySelectorAll('.notification .delete');
+
+if (deleteButtons.length > 0) {
+    deleteButtons.forEach(el => {
+        el.addEventListener('click', () => {
+            el.parentNode.parentNode.removeChild(el.parentNode);
+        });
+    });
+}
