@@ -145,5 +145,5 @@
 {{ $intersectionObserverJS := resources.Get "js/intersection-observer.js" }}
 {{ $scrollclassJS := resources.Get "js/scrollclass.js" }}
 {{ $bundleJS := slice $intersectionObserverJS $scrollclassJS $homeJS | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha256" }}
-<script src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"></script>
+<script src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}" defer></script>
 {{ end }}

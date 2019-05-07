@@ -32,4 +32,4 @@
 {{ end }}
 
 {{ $mlSignupJS := resources.Get "js/mailing-list-signup.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $mlSignupJS.Permalink }}" integrity="{{ $mlSignupJS.Data.Integrity }}"></script>
+<script src="{{ $mlSignupJS.Permalink }}" integrity="{{ $mlSignupJS.Data.Integrity }}" defer></script>

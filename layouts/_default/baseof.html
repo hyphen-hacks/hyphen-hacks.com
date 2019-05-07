@@ -14,7 +14,7 @@
         {{ $style := resources.Get "sass/main.scss" | toCSS (dict "outputStyle" "compressed") | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
         <!-- Matomo -->
-        <script type="text/javascript">
+        <script type="text/javascript" defer>
             var _paq = window._paq || [];
             /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
             _paq.push(['disableCookies']);
@@ -61,7 +61,7 @@
         {{ partial "footer" . }}
 
         {{ $commonJS := resources.Get "js/common.js" | resources.Minify | resources.Fingerprint }}
-        <script src="{{ $commonJS.Permalink }}" integrity="{{ $commonJS.Data.Integrity }}"></script>
+        <script src="{{ $commonJS.Permalink }}" integrity="{{ $commonJS.Data.Integrity }}" defer></script>
 
         {{ block "extraJS" . }}
         {{ end }}
