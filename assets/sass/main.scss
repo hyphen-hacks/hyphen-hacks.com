@@ -72,15 +72,6 @@ $footer-background-color: $navy-dark;
     }
 }
 
-@media screen and (min-width: $tablet) and (max-width: $widescreen - 1px) {
-    #hero {
-        background-image: linear-gradient(rgba($navy, 0.7), rgba($navy, 0.7)), url('/img/pair-programming.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: auto 60vh;
-    }
-}
-
 @include widescreen {
     #hero {
         background-image: linear-gradient(0.25turn, rgba($navy, 0.7), rgba($navy, 0.7) 62.5%, rgba($navy, 0.35) 73.75%, rgba($navy, 0)), url('/img/pair-programming.svg');
@@ -95,8 +86,15 @@ $footer-background-color: $navy-dark;
         background-image: linear-gradient(transparentize($navy, 0.3), transparentize($navy, 0.3)), url('/img/dreamer.svg');
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 700px 100%;
+        background-size: 100% auto;
         min-height: 480px;
+    }
+
+    #hero {
+        background-image: linear-gradient(rgba($navy, 0.7), rgba($navy, 0.7)), url('/img/pair-programming.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
     }
 }
 
