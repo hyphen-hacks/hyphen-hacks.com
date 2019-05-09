@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "intersection-observer": "^0.6.0",
+    "scrollclass": "^0.3.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-uncss": "^0.16.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uncss": "^0.16.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2"
+  }
+}

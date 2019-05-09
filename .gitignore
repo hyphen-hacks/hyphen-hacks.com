@@ -1,1 +1,4 @@
 public
+node_modules
+assets/dist
+resources/_gen

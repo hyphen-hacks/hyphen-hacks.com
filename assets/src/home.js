@@ -1,3 +1,6 @@
+require('intersection-observer');
+const scrollclass = require('scrollclass');
+
 function popIn(id) {
     return {
         target: id,

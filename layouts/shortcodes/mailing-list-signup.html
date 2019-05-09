@@ -31,5 +31,5 @@
 </div>
 {{ end }}
 
-{{ $mlSignupJS := resources.Get "js/mailing-list-signup.js" | resources.Minify | resources.Fingerprint }}
+{{ $mlSignupJS := resources.Get "dist/mailingListSignup.js" | resources.Fingerprint }}
 <script src="{{ $mlSignupJS.Permalink }}" integrity="{{ $mlSignupJS.Data.Integrity }}" defer></script>

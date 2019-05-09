@@ -60,7 +60,7 @@
         <div id="wrapper"></div>
         {{ partial "footer" . }}
 
-        {{ $commonJS := resources.Get "js/common.js" | resources.Minify | resources.Fingerprint }}
+        {{ $commonJS := resources.Get "dist/common.js" | resources.Fingerprint }}
         <script src="{{ $commonJS.Permalink }}" integrity="{{ $commonJS.Data.Integrity }}" defer></script>
 
         {{ block "extraJS" . }}
