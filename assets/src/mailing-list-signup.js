@@ -19,7 +19,7 @@ function submitSignup(e) {
 
     function logError() {
         status.innerHTML = 'An error occurred. Please try again later.';
-        status.classList.add('has-text-danger');
+        status.classList.add('is-danger');
         if (typeof _paq == 'object') {
             _paq.push(['trackEvent', 'Marketing', 'ListSignupError']);
         }
@@ -28,6 +28,7 @@ function submitSignup(e) {
     xhr.onerror = logError;
     xhr.onload = () => {
         if (xhr.status == 200) {
+            status.classList.add('is-success');
             status.innerHTML = 'You\'ve successfully been added to our mailing list. Thanks!';
             if (typeof _paq == 'object') {
                 _paq.push(['trackEvent', 'Marketing', 'ListSignupSuccess']);

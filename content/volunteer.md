@@ -18,6 +18,6 @@ May 13, 2019</time>. Volunteer applications will open at a later date in Fall
 back here to find the applications once they are open.
 
 You can also sign up for our mailing list to be notified when they are
-available. {{< mailing-list-disclaimer >}}
+available.
 
 {{< mailing-list-signup true >}}

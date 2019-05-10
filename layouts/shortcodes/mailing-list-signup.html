@@ -3,27 +3,33 @@
     <div class="column is-three-quarters is-half-widescreen">
 {{ end }}
 
-<form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="ml-signup-form">
-    <div class="field is-horizontal">
-        <div class="field-label is-normal">
-            <label for="email" class="label">Email</label>
-        </div>
-        <div class="field-body is-normal">
-            <div class="field is-expanded">
-                <div class="field has-addons">
-                    <p class="control is-expanded">
-                        <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
-                    </p>
-                    <p class="control">
-                        <input type="submit" value="Sign up" class="button is-primary" id="ml-submit">
-                    </p>
-                </div>
+<div class="notification is-dark m-t-md">
+    <form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="ml-signup-form">
+        <div class="field">
+            <div class="control">
+                <label for="consent" class="checkbox is-size-6">
+                    <input type="checkbox" name="consent" id="consent" required onchange="setCustomValidity('')" oninvalid="setCustomValidity('In order to sign up for our mailing list, you must agree to receive email from us.')">
+                    I agree to receive news, information, and announcements via
+                    email from the Hyphen-Hacks team
+                </label>
             </div>
         </div>
-    </div>
-</form>
-<div class="has-text-centered m-t-md">
-    <span id="ml-signup-status"></span>
+        <div class="field">
+            <label for="email" class="label">Email</label>
+            <div class="control is-expanded">
+                <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
+            </div>
+        </div>
+        <div class="field">
+            <p class="control">
+                <input type="submit" value="Sign up" class="button is-primary is-uppercase" id="ml-submit">
+            </p>
+            <p class="help" id="ml-signup-status">
+                We'll never share your email address with anyone, and you can
+                unsubscribe at any time.
+            </p>
+        </div>
+    </form>
 </div>
 
 {{ if .Get 0 }}

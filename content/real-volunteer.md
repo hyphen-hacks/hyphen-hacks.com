@@ -16,13 +16,13 @@ you can help out:
 Mentor and judge applications are open! Click the button below and select
 "Mentor/Judge" to start your application.
 
-{{< eventbrite-widget true >}}
+{{< eventbrite-widget true "Volunteer" >}}
 
 Volunteer applications will open in Fall 2019 (the exact date will be posted
 here once it has been determined). Check back here to find the application once
 it is open.
 
 You can also sign up for our mailing list to be notified when they are
-available. {{< mailing-list-disclaimer >}}
+available.
 
 {{< mailing-list-signup true >}}
