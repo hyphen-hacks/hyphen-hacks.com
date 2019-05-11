@@ -58,3 +58,17 @@ $delays: (
         }
     }
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.is-spinning {
+    animation: spin 1s linear 0s infinite normal;
+}
