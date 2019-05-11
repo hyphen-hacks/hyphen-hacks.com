@@ -7,18 +7,20 @@
     <form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="ml-signup-form">
         <div class="field">
             <div class="control">
-                <label for="consent" class="checkbox is-size-6">
-                    <input type="checkbox" name="consent" id="consent" required onchange="setCustomValidity('')" oninvalid="setCustomValidity('In order to sign up for our mailing list, you must agree to receive email from us.')">
+                <label for="ml-consent" class="checkbox is-size-6">
+                    <input type="checkbox" name="consent" id="ml-consent" required onchange="setCustomValidity('')" oninvalid="setCustomValidity('In order to sign up for our mailing list, you must agree to receive email from us.')">
                     I agree to receive news, information, and announcements via
                     email from the Hyphen-Hacks team
                 </label>
+                <p class="help is-danger" id="consent-error-text"></p>
             </div>
         </div>
         <div class="field">
-            <label for="email" class="label">Email</label>
+            <label for="ml-email" class="label">Email</label>
             <div class="control is-expanded">
                 <input type="email" name="email" placeholder="you@example.com" required class="input" id="ml-email">
             </div>
+            <p class="help is-danger" id="email-error-text"></p>
         </div>
         <div class="field">
             <p class="control">

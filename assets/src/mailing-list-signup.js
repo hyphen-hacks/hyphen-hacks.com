@@ -7,8 +7,26 @@ function submitSignup(e) {
     }
 
     let status = document.getElementById('ml-signup-status'),
+        consent = document.getElementById('ml-consent'),
+        consentError = document.getElementById('consent-error-text'),
         email = document.getElementById('ml-email').value,
-        submit = document.getElementById('ml-submit');
+        emailError = document.getElementById('email-error-text'),
+        submit = document.getElementById('ml-submit'),
+        emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (!consent.checked) {
+        consentError.innerHTML = 'In order to sign up for our mailing list, you must agree to receive email from us.';
+        return false;
+    } else {
+        consentError.innerHTML = '';
+    }
+
+    if (!(email.match(emailRegex))) {
+        emailError.innerHTML = 'Please enter an email address.';
+        return false;
+    } else {
+        emailError.innerHTML = '';
+    }
 
     submit.disabled = true;
     status.innerHTML = 'Submitting...';
