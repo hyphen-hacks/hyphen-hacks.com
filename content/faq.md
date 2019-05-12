@@ -18,7 +18,7 @@ sense of defeating the security of computers.
 Anyone who is enrolled in a high school between the 9th and 12th grades may
 participate in Hyphen-Hacks.
 
-## Can you sleep?
+## Can I sleep?
 
 Yes, you can sleep at the campus. We recommend you bring a sleeping bag.
 
