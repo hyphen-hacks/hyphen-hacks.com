@@ -38,6 +38,7 @@ function submitSignup(e) {
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
     function logError() {
+        console.log(xhr);
         spinner.style.display = 'none';
         status.innerHTML = 'An error occurred. Please try again later.';
         status.classList.add('has-text-danger');
@@ -56,6 +57,7 @@ function submitSignup(e) {
                 _paq.push(['trackEvent', 'Marketing', 'ListSignupSuccess']);
             }
         } else {
+            console.log(xhr.status);
             logError();
         }
     };
