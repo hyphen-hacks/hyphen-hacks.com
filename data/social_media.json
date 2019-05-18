@@ -1,0 +1,17 @@
+[
+    {
+        "url": "https://facebook.com/lwhshackathon",
+        "icon": "facebook-square",
+        "alt": "facebook.com/lwhshackathon"
+    },
+    {
+        "url": "https://twitter.com/lwhshackathon",
+        "icon": "twitter-square",
+        "alt": "Twitter: @lwhshackathon"
+    },
+    {
+        "url": "https://instagram.com/lwhshackathon",
+        "icon": "instagram",
+        "alt": "Instagram: @lwhshackathon"
+    }
+]

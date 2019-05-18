@@ -1,5 +1,14 @@
 <footer class="footer has-text-centered">
     <p>
+        {{/* social media links */}}
+        {{ range .Site.Data.social_media }}
+        <a href="{{ .url }}" title="{{ .alt }}" target="_blank" rel="noopener" class="icon is-medium has-text-white m-l-sm m-r-sm">
+            <i class="fab fa-2x fa-{{ .icon }}"></i>
+        </a>
+        {{ end }}
+    </p><br>
+
+    <p>
         Website design by <a href="https://ronanfuruta.com/">Ronan Furuta</a>
         @ <a href="https://stomprocket.io/">Stomp Rocket</a>
     </p>
