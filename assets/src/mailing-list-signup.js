@@ -41,7 +41,8 @@ function submitSignup(e) {
         console.log(xhr);
         spinner.style.display = 'none';
         status.innerHTML = 'An error occurred. Please try again later.';
-        status.classList.add('has-text-danger');
+        status.classList.add('has-text-danger', 'is-size-5');
+        document.getElementById('ml-signup-form').classList.add('signup-form-collapsed');
         if (typeof _paq == 'object') {
             _paq.push(['trackEvent', 'Marketing', 'ListSignupError']);
         }
