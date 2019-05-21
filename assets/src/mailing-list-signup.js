@@ -51,8 +51,9 @@ function submitSignup(e) {
     xhr.onload = () => {
         if (xhr.status == 200) {
             spinner.style.display = 'none';
-            status.classList.add('has-text-success');
+            status.classList.add('has-text-success', 'is-size-5');
             status.innerHTML = 'You\'ve successfully been added to our mailing list. Thanks!';
+            document.getElementById('ml-signup-form').classList.add('signup-form-collapsed');
             if (typeof _paq == 'object') {
                 _paq.push(['trackEvent', 'Marketing', 'ListSignupSuccess']);
             }
