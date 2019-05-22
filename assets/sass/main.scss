@@ -224,6 +224,21 @@ a.navbar-item {
     display: none;
 }
 
+#ml-signup-form {
+    max-height: 350px;
+    opacity: 1;
+    transition: max-height 0.25s, opacity 0.25s;
+
+    &.signup-form-collapsed {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
+#ml-signup-status {
+    transition: font-size 0.25s;
+}
+
 @import "spacing.scss";
 @import "anims.scss";
 @import "sticky-footer.scss";

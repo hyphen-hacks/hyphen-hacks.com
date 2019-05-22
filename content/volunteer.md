@@ -1,6 +1,7 @@
 ---
 title: "Volunteer"
-url: "/volunteer"
+url: "/old-volunteer"
+draft: true
 ---
 
 Thank you for your interest in volunteering for Hyphen-Hacks! We have three ways
