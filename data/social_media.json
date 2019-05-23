@@ -2,16 +2,25 @@
     {
         "url": "https://facebook.com/lwhshackathon",
         "icon": "facebook-square",
+        "iconType": "fab",
         "alt": "facebook.com/lwhshackathon"
     },
     {
         "url": "https://twitter.com/hyphen_hacks",
         "icon": "twitter-square",
+        "iconType": "fab",
         "alt": "Twitter: @hyphen_hacks"
     },
     {
         "url": "https://instagram.com/hyphenhacks",
         "icon": "instagram",
+        "iconType": "fab",
         "alt": "Instagram: @hyphenhacks"
+    },
+    {
+        "url": "mailto:support@hyphen-hacks.com",
+        "icon": "envelope-square",
+        "iconType": "fas",
+        "alt": "support@hyphen-hacks.com"
     }
 ]

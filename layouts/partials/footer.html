@@ -4,7 +4,7 @@
         {{ $last := index (last 1 .Site.Data.social_media) 0 }}
         {{ range $val := .Site.Data.social_media }}
         <a href="{{ $val.url }}" title="{{ $val.alt }}" target="_blank" rel="noopener" class="icon is-medium has-text-white{{ if not (eq $val $last) }} m-r-md{{ end }}">
-            <i class="fab fa-2x fa-{{ $val.icon }}"></i>
+            <i class="{{ $val.iconType }} fa-2x fa-{{ $val.icon }}"></i>
         </a>
         {{ end }}
     </p><br>
