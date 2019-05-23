@@ -107,6 +107,12 @@ $hr-height: 1px;
     }
 }
 
+@include touch {
+    .has-text-centered-touch {
+        text-align: center;
+    }
+}
+
 .navbar {
     .navbar-brand h3 {
         position: relative;
