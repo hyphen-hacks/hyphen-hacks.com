@@ -245,6 +245,30 @@ a.navbar-item {
     transition: font-size 0.25s;
 }
 
+.modal {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s, visibility 0.1s;
+
+    .modal-content {
+        transition: transform 0.1s;
+    }
+    
+    &.is-active  {
+        visibility: visible;
+        opacity: 1;
+
+        .modal-content {
+            transform: scale(1);
+        }
+    }
+    
+    &:not(.is-active) .modal-content {
+        transform: scale(1.25);
+    }
+}
+
 @import "spacing.scss";
 @import "anims.scss";
 @import "sticky-footer.scss";

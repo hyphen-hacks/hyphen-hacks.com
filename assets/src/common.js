@@ -21,3 +21,23 @@ if (deleteButtons.length > 0) {
         });
     });
 }
+
+const modalCloseTargets = document.querySelectorAll('.modal-background, .modal-close');
+
+if (modalCloseTargets.length > 0) {
+    modalCloseTargets.forEach(el => {
+        el.addEventListener('click', () => {
+            el.parentNode.classList.remove('is-active');
+        });
+    })
+}
+
+const modalOpenTargets = document.getElementsByClassName('modal-opener');
+
+if (modalOpenTargets.length > 0) {
+    for (let el of modalOpenTargets) {
+        el.addEventListener('click', () => {
+            document.getElementById(el.dataset.targetModal).classList.add('is-active');
+        });
+    }
+}

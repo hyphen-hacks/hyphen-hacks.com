@@ -9,3 +9,4 @@ here on that date, or sign up for our mailing list using the form below to be
 notified as soon as it's available.
 
 {{< list-signup true >}}
+{{< list-signup-notification >}}
