@@ -5,7 +5,7 @@ layout: "minimal"
 ---
 <div class="section">
     <div class="container">
-        <div class="columns is-mobile is-centered">
+        <div class="columns is-mobile is-centered is-vcentered">
             <div class="column is-size-5 is-12-mobile is-10-tablet is-6-desktop">
                 <h1 class="title is-2 has-text-centered-touch is-family-secondary is-uppercase">
                     <span class="gold-stripe">Volunteer</span>
@@ -32,19 +32,20 @@ layout: "minimal"
                         </li>
                     </ul>
                 </div>
-                <p class="m-b-xl">
+                <p>
                     Currently only mentor/judge applications are open. Volunteer
                     applications will be opened in the fall of 2019. If
                     you&apos;re interested in being a volunteer, please
                     <a>sign up for our mailing list</a>.
                 </p>
-
-                {{< eventbrite-widget "" "Volunteer" "Become a mentor/judge">}}
-                {{< mailing-list-signup "" "Notify me when volunteer applications are open" >}}
             </div>
-            <div class="column is-offset-1 is-hidden-touch p-t-xl">
-                <img src="/img/collab.svg" alt="" class="m-t-xl">
+            <div class="column is-offset-1 is-hidden-touch">
+                <img src="/img/collab.svg" alt="">
             </div>
         </div>
+
+
+        {{< eventbrite-widget "" "Volunteer" "Become a mentor/judge">}}
+        {{< list-signup "" "Notify me when volunteer applications are open" >}}
     </div>
 </div>

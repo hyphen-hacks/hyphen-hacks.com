@@ -226,22 +226,22 @@ a.navbar-item {
     white-space: nowrap;
 }
 
-#ml-submit-spinner {
+#list-signup-submit-spinner {
     display: none;
 }
 
-#ml-signup-form {
+#list-signup-form {
     max-height: 350px;
     opacity: 1;
     transition: max-height 0.25s, opacity 0.25s;
 
-    &.signup-form-collapsed {
+    &.list-signup-form-collapsed {
         max-height: 0;
         opacity: 0;
     }
 }
 
-#ml-signup-status {
+#list-signup-status {
     transition: font-size 0.25s;
 }
 

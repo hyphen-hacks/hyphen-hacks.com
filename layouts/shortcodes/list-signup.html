@@ -1,0 +1,46 @@
+{{ if .Get 0 }}
+<div class="columns is-centered">
+    <div class="column is-three-quarters is-half-widescreen">
+{{ end }}
+
+<div class="notification is-dark m-t-md">
+    <form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="list-signup-form">
+        <div class="field">
+            <div class="control">
+                <label for="list-signup-consent" class="checkbox is-size-6">
+                    <input type="checkbox" name="consent" id="list-signup-consent" required onchange="setCustomValidity('')" oninvalid="setCustomValidity('In order to sign up for our mailing list, you must agree to receive email from us.')">
+                    I agree to receive news, information, and announcements via
+                    email from the Hyphen-Hacks team
+                </label>
+                <p class="help is-danger" id="consent-error-text"></p>
+            </div>
+        </div>
+        <div class="field">
+            <label for="list-signup-email" class="label">Email</label>
+            <div class="control is-expanded">
+                <input type="email" name="email" placeholder="you@example.com" required class="input" id="list-signup-email">
+            </div>
+            <p class="help is-danger" id="email-error-text"></p>
+        </div>
+        <div class="field">
+            <p class="control">
+                <input type="submit" value="Sign up" class="button is-primary is-uppercase" id="list-signup-submit">
+            </p>
+        </div>
+    </form>
+    <p class="help">
+        <span class="icon is-lineheight is-spinning" id="list-signup-submit-spinner"><i class="fas fa-circle-notch"></i></span>
+        <span id="list-signup-status">
+            We'll never share your email address with anyone, and you can
+            unsubscribe at any time.
+        </span>
+    </p>
+</div>
+
+{{ if .Get 0 }}
+    </div>
+</div>
+{{ end }}
+
+{{ $listSignupJS := resources.Get "dist/listSignup.js" | resources.Fingerprint }}
+<script src="{{ $listSignupJS.Permalink }}" integrity="{{ $listSignupJS.Data.Integrity }}" defer></script>

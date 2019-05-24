@@ -1,4 +1,4 @@
-document.getElementById('ml-signup-form').addEventListener('submit', submitSignup, false);
+document.getElementById('list-signup-form').addEventListener('submit', submitSignup, false);
 
 
 function submitSignup(e) {
@@ -6,13 +6,13 @@ function submitSignup(e) {
         e.preventDefault();
     }
 
-    let status = document.getElementById('ml-signup-status'),
-        consent = document.getElementById('ml-consent'),
+    let status = document.getElementById('list-signup-status'),
+        consent = document.getElementById('list-signup-consent'),
         consentError = document.getElementById('consent-error-text'),
-        email = document.getElementById('ml-email').value,
+        email = document.getElementById('list-signup-email').value,
         emailError = document.getElementById('email-error-text'),
-        submit = document.getElementById('ml-submit'),
-        spinner = document.getElementById('ml-submit-spinner'),
+        submit = document.getElementById('list-signup-submit'),
+        spinner = document.getElementById('list-signup-submit-spinner'),
         emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (!consent.checked) {
@@ -42,7 +42,7 @@ function submitSignup(e) {
         spinner.style.display = 'none';
         status.innerHTML = 'An error occurred. Please try again later.';
         status.classList.add('has-text-danger', 'is-size-5');
-        document.getElementById('ml-signup-form').classList.add('signup-form-collapsed');
+        document.getElementById('list-signup-form').classList.add('list-signup-form-collapsed');
         if (typeof _paq == 'object') {
             _paq.push(['trackEvent', 'Marketing', 'ListSignupError']);
         }
@@ -54,7 +54,7 @@ function submitSignup(e) {
             spinner.style.display = 'none';
             status.classList.add('has-text-success', 'is-size-5');
             status.innerHTML = 'You\'ve successfully been added to our mailing list. Thanks!';
-            document.getElementById('ml-signup-form').classList.add('signup-form-collapsed');
+            document.getElementById('list-signup-form').classList.add('list-signup-form-collapsed');
             if (typeof _paq == 'object') {
                 _paq.push(['trackEvent', 'Marketing', 'ListSignupSuccess']);
             }
