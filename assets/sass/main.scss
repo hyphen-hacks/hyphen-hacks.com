@@ -269,6 +269,11 @@ a.navbar-item {
     }
 }
 
+.button.is-multiline {
+    white-space: normal;
+    height: initial;
+}
+
 @import "spacing.scss";
 @import "anims.scss";
 @import "sticky-footer.scss";
