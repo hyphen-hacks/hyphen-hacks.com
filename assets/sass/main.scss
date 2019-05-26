@@ -299,6 +299,10 @@ a.navbar-item {
     position: relative !important;
 }
 
+a:not(.button, .navbar-item, .icon) {
+    text-decoration: underline;
+}
+
 @import "spacing.scss";
 @import "anims.scss";
 @import "sticky-footer.scss";
