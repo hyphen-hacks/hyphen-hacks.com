@@ -1,12 +1,7 @@
 <div class="modal" id="list-signup-modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-        <div class="notification is-dark">
-            <h1 class="title is-4 is-family-secondary">
-                Sign up for our mailing list
-            </h1>
-            {{ partial "list-signup-form-only" . }}
-        </div>
+        {{ partial "list-signup-form-only" (dict "signupMessage" (.Get 0) "successMessage" (.Get 1)) }}
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
 </div>

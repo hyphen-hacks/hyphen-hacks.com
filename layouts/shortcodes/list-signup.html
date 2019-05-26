@@ -3,9 +3,7 @@
     <div class="column is-three-quarters is-half-widescreen">
 {{ end }}
 
-<div class="notification is-dark m-t-md">
-    {{ partial "list-signup-form-only" . }}
-</div>
+{{ partial "list-signup-form-only" (dict "signupMessage" (.Get 1) "successMessage" (.Get 2)) }}
 
 {{ if .Get 0 }}
     </div>

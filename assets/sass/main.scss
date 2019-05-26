@@ -11,6 +11,7 @@ $red: #ff6040;
 
 $primary: $gold;
 $primary-invert: $navy-dark;
+$white-invert: $navy-dark;
 $link: $blue;
 $link-hover: $blue-dark;
 $dark: $navy-dark;
@@ -22,7 +23,6 @@ $body-color: white;
 $text-strong: white;
 $title-color: white;
 $label-color: white;
-$input-hover-color: white;
 $size-1: 96px;
 $size-2: 56px;
 $size-3: 36px;
@@ -63,7 +63,22 @@ $hr-height: 1px;
 //     }
 // }
 
-@import "bulma-0.7.4/bulma.sass";
+@import "bulma-0.7.4/sass/utilities/_all.sass";
+@import "bulma-0.7.4/sass/base/_all.sass";
+
+@import "bulma-0.7.4/sass/elements/box.sass";
+@import "bulma-0.7.4/sass/elements/button.sass";
+@import "bulma-0.7.4/sass/elements/container.sass";
+@import "bulma-0.7.4/sass/elements/content.sass";
+@import "bulma-0.7.4/sass/elements/form.sass";
+@import "bulma-0.7.4/sass/elements/icon.sass";
+@import "bulma-0.7.4/sass/elements/title.sass";
+
+@import "bulma-0.7.4/sass/components/modal.sass";
+@import "bulma-0.7.4/sass/components/navbar.sass";
+
+@import "bulma-0.7.4/sass/layout/_all.sass";
+@import "bulma-0.7.4/sass/grid/_all.sass";
 
 #navbar-logo {
     width: 50px;
@@ -269,9 +284,38 @@ a.navbar-item {
     }
 }
 
+.label:hover {
+    color: unset;
+}
+
 .button.is-multiline {
     white-space: normal;
     height: initial;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.is-relative {
+    position: relative !important;
+}
+
+a:not(.button, .navbar-item, .icon) {
+    text-decoration: underline;
 }
 
 @import "spacing.scss";
