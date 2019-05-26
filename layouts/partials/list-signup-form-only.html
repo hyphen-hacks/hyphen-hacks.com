@@ -1,17 +1,17 @@
-<div class="box is-relative is-marginless is-clipped">
+<div class="box is-relative is-marginless is-clipped p-lg">
     <h1 class="title is-4 is-family-secondary has-text-dark">
         Sign up for our mailing list
     </h1>
-    <p class="subtitle is-5 has-text-dark">
+    <p class="is-size-5 has-text-dark m-b-lg">
         {{ .signupMessage }}
     </p>
     <form method="POST" action="https://api.hyphen-hacks.com/api/v1/addEmail" id="list-signup-form">
         <div class="field is-grouped">
             <div class="control is-expanded">
-                <input type="email" name="email" placeholder="Email" required class="input" id="list-signup-email">
+                <input type="email" name="email" placeholder="Email" required class="input is-medium" id="list-signup-email">
             </div>
             <div class="control">
-                <button type="submit" class="button is-primary is-uppercase" id="list-signup-submit">Sign up</button>
+                <button type="submit" class="button is-primary is-medium m-l-md is-uppercase" id="list-signup-submit">Sign up</button>
             </div>
             <p class="help is-danger" id="email-error-text"></p>
         </div>
