@@ -318,6 +318,10 @@ a:not(.button, .navbar-item, .icon) {
     text-decoration: underline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import "spacing.scss";
 @import "anims.scss";
 @import "sticky-footer.scss";

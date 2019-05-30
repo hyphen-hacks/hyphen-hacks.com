@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar {{ if .IsHome }}navbar-hidden {{ end }}is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a href="/" class="navbar-item">
+        <a href="{{ if .IsHome }}#{{ else }}/{{ end }}" class="navbar-item">
             <img src="/img/logo.svg" alt="" id="navbar-logo">
             <h3 class="is-family-secondary is-size-4 is-size-5-mobile">&nbsp;Hyphen-Hacks</h3>
         </a>
