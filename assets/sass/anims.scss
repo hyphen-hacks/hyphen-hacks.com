@@ -23,7 +23,7 @@ $bounce-out: cubic-bezier(.45, 1.8, .75, 1);
     }
 
     .pop-in {
-        animation: pop-in 0.5s $bounce-out 0s 1 normal backwards paused;
+        animation: pop-in 0.5s $bounce-out 0s 1 normal both paused;
 
         &.has-popped-in {
             animation-play-state: running;
