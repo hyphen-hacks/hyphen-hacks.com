@@ -73,6 +73,8 @@ $hr-height: 1px;
 @import "bulma-0.7.4/sass/elements/form.sass";
 @import "bulma-0.7.4/sass/elements/icon.sass";
 @import "bulma-0.7.4/sass/elements/title.sass";
+@import "bulma-0.7.4/sass/elements/notification.sass";
+@import "bulma-0.7.4/sass/elements/other.sass";
 
 @import "bulma-0.7.4/sass/components/modal.sass";
 @import "bulma-0.7.4/sass/components/navbar.sass";
@@ -218,7 +220,7 @@ a.navbar-item {
 
         @include tablet {
             border-radius: $radius;
-            margin: 1.5rem;
+            margin: 0.25rem;
             width: unset;
             box-shadow: $box-shadow;
         }
@@ -230,6 +232,27 @@ a.navbar-item {
     position: fixed;
     bottom: 0;
     width: 100%;
+
+    @include tablet {
+        padding: 1.25rem;
+    }
+
+    &.has-notification-animated {
+        opacity: 1;
+        animation: notification-slide-up 0.25s ease-out 2s 1 normal backwards running;
+    }
+}
+
+@keyframes notification-slide-up {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
 .icon.is-lineheight {
