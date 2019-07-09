@@ -1,8 +1,6 @@
 {{ if .Site.Data.sponsors.platinum }}
 <div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase has-text-centered">
-        <span class="gold-stripe">Platinum</span>
-    </h5>
+    <h5 class="is-size-4 is-uppercase">Platinum</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.platinum }}
         {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "half") }}
@@ -13,9 +11,7 @@
 
 {{ if .Site.Data.sponsors.gold }}
 <div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase has-text-centered">
-        <span class="gold-stripe">Gold</span>
-    </h5>
+    <h5 class="is-size-4 is-uppercase">Gold</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.gold }}
         {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-third") }}
@@ -26,9 +22,7 @@
 
 {{ if .Site.Data.sponsors.silver }}
 <div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase has-text-centered">
-        <span class="gold-stripe">Silver</span>
-    </h5>
+    <h5 class="is-size-4 is-uppercase">Silver</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.silver }}
         {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-quarter") }}
@@ -39,9 +33,7 @@
 
 {{ if .Site.Data.sponsors.bronze }}
 <div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase has-text-centered">
-        <span class="gold-stripe">Bronze</span>
-    </h5>
+    <h5 class="is-size-4 is-uppercase">Bronze</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.bronze }}
         {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-fifth") }}
@@ -52,9 +44,7 @@
 
 {{ if .Site.Data.sponsors.copper }}
 <div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase has-text-centered">
-        <span class="gold-stripe">Copper</span>
-    </h5>
+    <h5 class="is-size-4 is-uppercase">Copper</h5>
     <div class="columns is-multiline is-centered">
         {{ range .Site.Data.sponsors.copper }}
         {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-fifth") }}
