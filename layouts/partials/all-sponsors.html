@@ -43,11 +43,11 @@
 {{ end }}
 
 {{ if .Site.Data.sponsors.copper }}
-<div class="box m-b-lg m-t-lg">
-    <h5 class="is-size-4 is-uppercase">Copper</h5>
-    <div class="columns is-multiline is-centered">
+<div class="columns is-centered">
+    <div class="column is-narrow box m-b-lg m-t-lg p-lg">
+        <h5 class="is-size-5 is-uppercase m-b-md">Copper</h5>
         {{ range .Site.Data.sponsors.copper }}
-        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "one-fifth") }}
+        {{ partial "sponsor" (dict "sponsor" . "background" "light" "columnSize" "12") }}
         {{ end }}
     </div>
 </div>

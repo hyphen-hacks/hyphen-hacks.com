@@ -1,13 +1,11 @@
-<div class="column{{ if .columnSize }} is-{{ .columnSize }}{{ end }}">
-    {{ $logoURL := "" }}
-    {{ if (and (eq .background "light") .sponsor.logoLightBKG) }}
-        {{ $logoURL = .sponsor.logoLightBKG }}
-    {{ else if (and (eq .background "dark") .sponsor.logoDarkBKG) }}
-        {{ $logoURL = .sponsor.logoDarkBKG }}
-    {{ else }}
-        {{ $logoURL = .sponsor.logo }}
-    {{ end }}
-    {{ with .sponsor }}
-    <a href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ $logoURL }}" alt="{{ .name }}" title="{{ .name }}" width="100%"></a>
-    {{ end }}
-</div>
+{{ $logoURL := "" }}
+{{ if (and (eq .background "light") .sponsor.logoLightBKG) }}
+    {{ $logoURL = .sponsor.logoLightBKG }}
+{{ else if (and (eq .background "dark") .sponsor.logoDarkBKG) }}
+    {{ $logoURL = .sponsor.logoDarkBKG }}
+{{ else }}
+    {{ $logoURL = .sponsor.logo }}
+{{ end }}
+{{ with .sponsor }}
+<a href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ $logoURL }}" alt="{{ .name }}" title="{{ .name }}" width="250"></a>
+{{ end }}
