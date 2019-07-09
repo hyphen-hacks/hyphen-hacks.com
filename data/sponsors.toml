@@ -27,3 +27,8 @@
 # name = "Bronze Sponsor 2"
 # url = "https://example.com"
 # logo = "/img/sponsor-logos/bronze-sponsor-2.png"
+
+[[copper]]
+name = "Sketch"
+url = "https://sketch.com/press"
+logo = "/img/sponsor-logos/sketch.svg"
