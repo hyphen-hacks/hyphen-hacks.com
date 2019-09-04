@@ -14,7 +14,7 @@
         {{/* pages can override the title, but the sitewide title is the default */}}
         <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-        <meta property="og:title" content='{{ block "title" . }}{{ .Site.Title }}{{ end }}'>
+        <meta property="og:title" content='{{ block "title" . }}{{ end }}'>
         <meta property="og:url" content="{{ .Permalink }}">
         <meta property="og:image" content="/img/banner.png">
         <meta property="og:type" content="website">
