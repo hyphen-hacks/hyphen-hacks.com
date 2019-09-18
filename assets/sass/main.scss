@@ -168,7 +168,9 @@ a.navbar-item {
         @include gold-stripe;
         background-size: 0% 25%;
         background-position: center bottom;
-        transition: background-size 0.1s;
+        transition: background-size 0.1s, opacity 0.1s;
+        // attempt to make the stripe fade in as it grows
+        // opacity: 0;
     }
 
     &:hover {
@@ -177,6 +179,7 @@ a.navbar-item {
 
         span {
             background-size: 100% 25%;
+            opacity: 1;
         }
     }
 }
