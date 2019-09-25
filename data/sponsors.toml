@@ -32,3 +32,13 @@
 name = "Sketch"
 url = "https://sketch.com/press"
 logo = "/img/sponsor-logos/sketch.svg"
+
+[[copper]]
+name = "Make School"
+url = "https://makeschool.com"
+logo = "/img/sponsor-logos/makeschool.svg"
+
+[[copper]]
+name = "Shawee"
+url = "https://shawee.io/"
+logo = "/img/sponsor-logos/shawee.svg"

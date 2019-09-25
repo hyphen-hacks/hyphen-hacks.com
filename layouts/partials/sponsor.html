@@ -7,5 +7,7 @@
     {{ $logoURL = .sponsor.logo }}
 {{ end }}
 {{ with .sponsor }}
-<a href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ $logoURL }}" alt="{{ .name }}" title="{{ .name }}" width="250"></a>
+<a href="{{ .url }}" target="_blank" rel="noopener" class="column is-narrow p-l-md p-r-md has-text-centered">
+    <img src="{{ $logoURL }}" alt="{{ .name }}" title="{{ .name }}" width="250">
+</a>
 {{ end }}
