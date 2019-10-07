@@ -42,3 +42,8 @@ logo = "/img/sponsor-logos/makeschool.svg"
 name = "Shawee"
 url = "https://shawee.io/"
 logo = "/img/sponsor-logos/shawee.svg"
+
+[[copper]]
+name = "UltraPress"
+url = "https://ultrapress.com/"
+logo = "/img/sponsor-logos/ultrapress.png"
