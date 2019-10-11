@@ -7,6 +7,7 @@ url: "/schedule"
 
 - **12:00 PM**         <span class="has-text-primary">Hacking Begins</span>
 - **12:05 - 12:40 PM** Finding a Team Workshop
+- **12:20 PM**         Hardware Lab Opens
 - **12:45 - 1:45 PM**  Lunch
 - **1:30 - 2:00 PM**   Ideation & Project Management Workshop
 - **2:30 - 4:00 PM**   Workshop Set 1
@@ -22,6 +23,8 @@ url: "/schedule"
 - **7:30 AM**          <span class="has-text-primary">Doors Open</span>
 - **7:30 - 8:30 AM**   Breakfast
 - **9:00 - 10:00 AM**  Workshop Set 3
+- **10:30 AM**         Hardware Lab Closes
+- **11:00 AM**         Submissions Open
 - **12:00 PM**         <span class="has-text-primary">Hacking Ends</span>
 - **12:00 - 1:00 PM**  Lunch
 - **1:00 - 3:00 PM**   Presentations
