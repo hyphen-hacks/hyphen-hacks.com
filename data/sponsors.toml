@@ -47,3 +47,8 @@ logo = "/img/sponsor-logos/shawee.svg"
 name = "UltraPress"
 url = "https://ultrapress.com/"
 logo = "/img/sponsor-logos/ultrapress.png"
+
+[[copper]]
+name = "Magoosh"
+url = "https://magoosh.com/"
+logo = "/img/sponsor-logos/magoosh.png"
