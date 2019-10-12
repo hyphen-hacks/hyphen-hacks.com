@@ -5,6 +5,7 @@ url: "/schedule"
 
 # Saturday
 
+- **10:00 AM**         Check-in Begins
 - **12:00 PM**         <span class="has-text-primary">Hacking Begins</span>
 - **12:05 - 12:40 PM** Finding a Team Workshop
 - **12:20 PM**         Hardware Lab Opens
