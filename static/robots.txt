@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hyphen-hacks.com/sitemap.xml
