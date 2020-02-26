@@ -1,0 +1,19 @@
+{
+  "name": "hyphen-hacks",
+  "version": "1.0.0",
+  "description": "Hyphen-Hacks 2020",
+  "author": "Ronan18",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0"
+  }
+}
