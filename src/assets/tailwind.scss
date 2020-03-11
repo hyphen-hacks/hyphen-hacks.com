@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
+body {
+  @apply bg-gray text-gray-lightest;
+}
+.nav_link {
+  @apply mx-2 my-1 font-medium duration-200;
+}
+.nav_link:hover {
+  @apply  text-gray-hover;
+}
+.btn {
+  @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded duration-200;
+}
+.btn:hover {
+  @apply text-gray-lightest bg-transparent  border-primary;
+}
+.btn--outline {
+  @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded duration-200;
+}
+.btn--outline:hover {
+  @apply text-gray-lightest bg-primary;
+}
 @tailwind utilities;
