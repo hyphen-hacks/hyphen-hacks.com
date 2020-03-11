@@ -10,15 +10,47 @@ body {
   @apply  text-gray-hover;
 }
 .btn {
-  @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded duration-200;
+  @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded-sm duration-200;
 }
 .btn:hover {
-  @apply text-gray-lightest bg-transparent  border-primary;
+  @apply text-gray-lightest bg-primary-darker  border-primary-darker;
 }
 .btn--outline {
-  @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded duration-200;
+  @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded-sm duration-200;
 }
 .btn--outline:hover {
-  @apply text-gray-lightest bg-primary;
+  @apply text-gray-lightest bg-primary-darker;
+}
+.home_header {
+  height: 80vh;
+}
+.input {
+  @apply bg-gray-form p-2 border-4 border-gray-form rounded-sm duration-200;
+}
+.input:hover {
+  @apply bg-gray-form_hover border-gray-form_hover;
+
+}
+.twentyTwentyHeader {
+position: absolute;
+  @apply ml-auto font-black text-black;
+  font-size: 40vh;
+  z-index: 0;
+  float: right;
+  text-align: right;
+  right: 10%;
+
+     }
+.header_image {
+  position: relative;
+  margin-top: -8rem;
+  height: auto;
+  width: 90%;
+  margin-bottom: 3rem;
+  @apply mx-auto;
+}
+.header_image_container {
+  margin-top: 8rem;
+
 }
 @tailwind utilities;
