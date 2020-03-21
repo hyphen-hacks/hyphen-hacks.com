@@ -63,10 +63,14 @@
       <h2 class="feature_headline">Prizes</h2>
       <p class="feature_text">This year we have over $10,000 in prizes as well as sponsored products such as Adobe XD licences.</p>
       <img src="../assets/2020attendees.jpeg" alt="">
-      <h2 class="feature_headline text-center">Apply for free</h2>
-      <div class="flex justify-center mt-3 mb-3">
-        <a href="" class="btn mx-auto text-center">Apply</a>
-      </div>
+      <section class="my-5">
+        <h2 class="feature_headline text-center">Apply for free</h2>
+        <div class="flex justify-center mt-3 mb-3">
+          <a href="" class="btn mx-auto text-center">Apply</a>
+        </div>
+      </section>
+
+
     </section>
   </div>
   </div>

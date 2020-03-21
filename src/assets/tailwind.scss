@@ -73,4 +73,8 @@ position: absolute;
 .feature_text.right {
   @apply ml-auto text-right;
 }
+
 @tailwind utilities;
+.infoPage {
+  @apply  mx-auto pt-8;
+}
