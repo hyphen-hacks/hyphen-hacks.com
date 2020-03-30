@@ -12,8 +12,8 @@
       <p class="font-semibold text-2xl z-50">October 17th-18th 2020 @ Lick-Wilmerding High School</p>
       <div class="flex justify-between items-end">
         <div class="flex">
-          <a href="" class="btn">Apply</a>
-          <a href="" class="btn--outline mx-3">Volunteer</a>
+          <router-link to="/apply" class="btn">Apply</router-link>
+          <router-link to="/volunteer" class="btn--outline mx-3">Volunteer</router-link>
         </div>
         <form @submit.prevent>
           <label for="mailingList" class="text-sm text-semibold">Sign up for our mailing list</label>
@@ -30,7 +30,7 @@
 
     </section>
     <section class="container xl mx-auto pt-8">
-      <h2 class="feature_headline">Mission</h2>
+      <h2 id="mission" class="feature_headline">Mission</h2>
       <p class="feature_text">Hyphen-Hacks is an annual 24-hour hackathon aimed at high school students from around the
         Bay Area with diverse backgrounds and skill levels. We hope to create a space where all students are inspired to
         learn new skills while collaborating on new inventions.</p>
@@ -66,24 +66,27 @@
       <section class="my-5">
         <h2 class="feature_headline text-center">Apply for free</h2>
         <div class="flex justify-center mt-3 mb-3">
-          <a href="" class="btn mx-auto text-center">Apply</a>
+          <router-link to="/apply" class="btn mx-auto text-center">Apply</router-link>
         </div>
       </section>
 
 
     </section>
+
   </div>
+    <Footer class="mt-10"></Footer>
   </div>
 </template>
 
 <script>
   // @ is an alias to /src
   import Nav from '@/components/nav.vue'
+  import Footer from '@/components/footer.vue'
 
   export default {
     name: 'Home',
     components: {
-      Nav
+      Nav, Footer
     }
   }
 </script>
