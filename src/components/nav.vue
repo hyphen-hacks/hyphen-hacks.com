@@ -1,6 +1,6 @@
 <template>
-  <nav class="flex flex-row items-center bg-gray-lighter p-5">
-    <router-link to="/" class="flex flex-row items-center mr-auto no-underline">
+  <nav class="flex flex-row items-center bg-gray-lighter p-5 flex-wrap">
+    <router-link to="/" class="flex flex-row items-center mr-auto no-underline w-full sm:w-auto">
       <img class="h-10 mr-1" src="../assets/logo.svg" alt="Hyphen-Hacks logo">
       <h1 class="font-bold text-2xl no-underline text-white">Hyphen-Hacks 2020</h1>
     </router-link>

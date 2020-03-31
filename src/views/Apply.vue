@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav></Nav>
-    <div class="infoPage container xl">
+    <div class="infoPage container xl md:p-10">
       <div class="w-full bg-primary h-1/2 p-10">
         <div id="applyBanner">
           <h1 class="font-bold text-10xl">Apply</h1>

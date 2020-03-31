@@ -2,14 +2,14 @@
   <div>
     <Nav></Nav>
   <div class="home">
-    <header class="container xl  mx-auto flex flex-col justify-around home_header">
+    <header class="container xl  mx-auto flex flex-col justify-around home_header md:p-10 sm:p-2">
       <h1 class="twentyTwentyHeader">2020</h1>
       <div class="z-50">
         <h1 class="text-10xl font-bold">Hyphen-Hacks</h1>
         <p class="font-semibold text-5xl">24 hour programming competition with learning opportunities for all</p>
       </div>
 
-      <p class="font-semibold text-2xl z-50">October 17th-18th 2020 @ Lick-Wilmerding High School</p>
+      <p class="font-semibold text-2xl z-50">October 17-18 2020 @ Lick-Wilmerding High School</p>
       <div class="flex justify-between items-end">
         <div class="flex">
           <router-link to="/apply" class="btn">Apply</router-link>
@@ -25,11 +25,11 @@
         </form>
       </div>
     </header>
-    <section class="header_image_container bg-primary container xl mx-auto p-8 px-10">
+    <section class="header_image_container bg-primary container xl mx-auto p-8 px-10 ">
       <img class="header_image" src="../assets/Ronan-3765.jpeg" alt="Hyphen-Hacks attendeees programming">
 
     </section>
-    <section class="container xl mx-auto pt-8">
+    <section class="container xl mx-auto pt-8 md:p-10">
       <h2 id="mission" class="feature_headline">Mission</h2>
       <p class="feature_text">Hyphen-Hacks is an annual 24-hour hackathon aimed at high school students from around the
         Bay Area with diverse backgrounds and skill levels. We hope to create a space where all students are inspired to

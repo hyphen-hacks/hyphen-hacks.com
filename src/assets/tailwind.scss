@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 body {
   @apply bg-gray text-gray-lightest;
 }
@@ -59,7 +60,9 @@ position: absolute;
   float: right;
   text-align: right;
   right: 10%;
-
+  @media (max-width: 639px) {
+    font-size: 20vh;
+  }
      }
 .twentyTwentyHeaderPlaceholder {
   position: absolute;
@@ -94,8 +97,11 @@ position: absolute;
   @apply ml-auto text-right;
 }
 .infoPage {
-  @apply  mx-auto pt-8;
+  @apply  mx-auto pt-8 flex flex-col justify-center;
+  min-height: 70vh;
 }
+
+
 .faqHeader {
   @apply font-bold text-4xl mt-5;
 }
@@ -111,11 +117,6 @@ position: absolute;
   justify-content: center;
   align-items: center;
 }
-.footer {
-  @apply bg-primary p-5 w-full  mx-auto pt-8;
-  height: 40vh;
-}
-.footerLinks {
-  height: 20vh;
-}
-@tailwind utilities;
+
+
+
