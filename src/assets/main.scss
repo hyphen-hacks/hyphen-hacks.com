@@ -2,16 +2,29 @@ body {
   @apply bg-gray text-gray-lightest;
 }
 .nav_link {
-  @apply mx-2 my-1 font-medium duration-200 no-underline;
+  @apply mx-2 my-1 font-medium duration-200 no-underline ;
+
+}
+.hide-sm {
+  @apply hidden;
+  @media (min-width:770px) {
+    @apply inline;
+  }
+}
+.show-sm {
+  @apply inline;
+  @media (min-width:770px) {
+    @apply hidden;
+  }
 }
 .nav_link:hover {
   @apply  text-gray-hover;
 }
 .btn {
-  @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded-sm duration-200 no-underline;
+  @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded-sm duration-200 no-underline text-center;
 }
 .btn--dark {
-  @apply text-gray-lightest px-5 py-2 bg-gray border-gray border-4 font-bold rounded-sm duration-200 no-underline;
+  @apply text-gray-lightest px-5 py-2 bg-gray border-gray border-4 font-bold rounded-sm duration-200 no-underline text-center;
 
 }
 .btn--dark:hover {
@@ -22,7 +35,7 @@ body {
   @apply text-gray-lightest bg-primary-darker  border-primary-darker;
 }
 .btn--outline {
-  @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded-sm duration-200 no-underline;
+  @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded-sm duration-200 no-underline text-center;
 }
 .btn--outline:hover {
   @apply text-gray-lightest bg-primary-darker;
@@ -57,7 +70,7 @@ a:hover {
   float: right;
   text-align: right;
   right: 10%;
-  @media (max-width: 639px) {
+  @media (max-width: 768px) {
     font-size: 20vw;
 
   }
@@ -71,6 +84,7 @@ a:hover {
   text-align: right;
   right: 10%;
   top: 15%;
+
 
 }
 .header_image {

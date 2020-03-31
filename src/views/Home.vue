@@ -5,13 +5,13 @@
     <header class="container xl  mx-auto flex flex-col justify-around home_header md:p-10 p-5">
       <h1 class="twentyTwentyHeader">2020</h1>
       <div class="z-50">
-        <h1 class="text-4xl sm:text-10xl font-bold">Hyphen-Hacks</h1>
-        <p class="font-semibold text-xl sm:text-5xl">24 hour programming competition with learning opportunities for all</p>
+        <h1 class="text-4xl md:text-7xl lg:text-10xl font-bold">Hyphen-Hacks</h1>
+        <p class="font-semibold text-xl md:text-3xl lg:text-5xl">24 hour programming competition with learning opportunities for all</p>
       </div>
 
       <p class="font-semibold text-base sm:text-2xl z-50">October 17-18 2020 @ Lick-Wilmerding High School</p>
       <div class="flex flex-col sm:flex-row justify-between items-end">
-        <div class="flex between w-full">
+        <div class="flex between w-full sm:w-auto">
           <router-link to="/apply" class="btn mr-auto sm:mx-0">Apply</router-link>
           <router-link to="/volunteer" class="btn--outline ml-auto sm:mx-3">Volunteer</router-link>
         </div>
