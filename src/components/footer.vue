@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-gray my-10 sm:m-10 m-5 bg-primary p-5 pt-8">
+  <footer class="container w-auto  text-gray my-10 md:m-10  xl:mx-auto m-5 bg-primary p-5 pt-8">
     <div class="flex items-center">
       <img class="h-12 mr-1" src="../assets/logo-blue.svg" alt="Hyphen-Hacks logo">
       <h2 class="font-bold text-3xl">Hyphen-Hacks 2020</h2>
