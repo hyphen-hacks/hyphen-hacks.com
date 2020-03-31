@@ -2,34 +2,34 @@
   <div>
     <Nav></Nav>
   <div class="home">
-    <header class="container xl  mx-auto flex flex-col justify-around home_header md:p-10 sm:p-2">
+    <header class="container xl  mx-auto flex flex-col justify-around home_header md:p-10 p-5">
       <h1 class="twentyTwentyHeader">2020</h1>
       <div class="z-50">
-        <h1 class="text-10xl font-bold">Hyphen-Hacks</h1>
-        <p class="font-semibold text-5xl">24 hour programming competition with learning opportunities for all</p>
+        <h1 class="text-4xl sm:text-10xl font-bold">Hyphen-Hacks</h1>
+        <p class="font-semibold text-xl sm:text-5xl">24 hour programming competition with learning opportunities for all</p>
       </div>
 
-      <p class="font-semibold text-2xl z-50">October 17-18 2020 @ Lick-Wilmerding High School</p>
-      <div class="flex justify-between items-end">
-        <div class="flex">
-          <router-link to="/apply" class="btn">Apply</router-link>
-          <router-link to="/volunteer" class="btn--outline mx-3">Volunteer</router-link>
+      <p class="font-semibold text-base sm:text-2xl z-50">October 17-18 2020 @ Lick-Wilmerding High School</p>
+      <div class="flex flex-col sm:flex-row justify-between items-end">
+        <div class="flex between w-full">
+          <router-link to="/apply" class="btn mr-auto sm:mx-0">Apply</router-link>
+          <router-link to="/volunteer" class="btn--outline ml-auto sm:mx-3">Volunteer</router-link>
         </div>
-        <form @submit.prevent>
+        <form @submit.prevent class="mt-5">
           <label for="mailingList" class="text-sm text-semibold">Sign up for our mailing list</label>
           <div>
-            <input id="mailingList" type="email" class=" input rounded-r-none" placeholder="Email">
-            <button type="submit" class="btn  rounded-l-none">Sign Up</button>
+            <input id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto" placeholder="Email">
+            <button type="submit" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
           </div>
 
         </form>
       </div>
     </header>
-    <section class="header_image_container bg-primary container xl mx-auto p-8 px-10 ">
+    <section class="header_image_container bg-primary container xl mx-auto  p-5 sm:px-10 ">
       <img class="header_image" src="../assets/Ronan-3765.jpeg" alt="Hyphen-Hacks attendeees programming">
 
     </section>
-    <section class="container xl mx-auto pt-8 md:p-10">
+    <section class="container xl mx-auto pt-8 p-5 md:p-10">
       <h2 id="mission" class="feature_headline">Mission</h2>
       <p class="feature_text">Hyphen-Hacks is an annual 24-hour hackathon aimed at high school students from around the
         Bay Area with diverse backgrounds and skill levels. We hope to create a space where all students are inspired to
@@ -49,15 +49,15 @@
       <h2 class="feature_headline">Open Format</h2>
       <p class="feature_text">Unlike many hackathons, Hyphen-Hacks has an open structure. You are free to work on your
         projects for the whole time, or you can choose to attend one of our many workshops.</p>
-      <div class="bg-primary p-16 py-20 flex flex-row text-black font-semibold my-16">
-        <div class="w-1/2">
+      <div class="bg-primary p-5 sm:p-16 p-7 sm:py-20 flex flex-col sm:flex-row text-black font-semibold my-10 sm:my-16">
+        <div class="sm:w-1/2">
           <h3 class="text-4xl">Food!</h3>
-          <p class="text-xl">We will serve four meals starting with lunch on Saturday. Additionally we always have
+          <p class="text-base">We will serve four meals starting with lunch on Saturday. Additionally we always have
             snacks available and a special midnight snack.</p>
         </div>
-        <div class="w-1/2">
+        <div class="sm:w-1/2 mt-5 sm:mt-0">
           <h3 class="text-4xl">Fun!</h3>
-          <p class="text-xl">At Hyphen-Hacks we have tons of fun games including: laser tag, ping pong, and boardgames galore. Additionally we provide team building workshops to help foster  a sense of community</p>
+          <p class="text-base">At Hyphen-Hacks we have tons of fun games including: laser tag, ping pong, and boardgames galore. Additionally we provide team building workshops to help foster  a sense of community</p>
         </div>
       </div>
       <h2 class="feature_headline">Prizes</h2>

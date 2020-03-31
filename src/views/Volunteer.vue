@@ -1,10 +1,10 @@
 <template>
   <div>
     <Nav></Nav>
-    <div class="infoPage container xl flex md:p-10">
-      <div class="flex flex-row">
-      <div class="w-1/2 pr-8">
-        <h1 class="font-bold text-7xl text-primary">Volunteer</h1>
+    <div class="infoPage mx-auto container lg:p-10 flex pt-8 flex flex-col justify-center p-5">
+      <div class="flex flex-col-reverse lg:flex-row lg:justify-between w-full">
+      <div class="mx-auto">
+        <h1 class="font-bold text-5xl sm:text-7xl text-primary">Volunteer</h1>
 
         <p class="faqText">Volunteers are a key part of Hyphen-Hacks. As a volunteer you will assist the Hyphen-Hacks
           team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to
@@ -19,7 +19,7 @@
           <router-link to="/mentor" class="btn--outline">Mentor</router-link>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
         <img src="../assets/Ronan-3765.jpeg" alt="">
       </div>
     </div>
