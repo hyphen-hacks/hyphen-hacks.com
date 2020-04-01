@@ -4,7 +4,7 @@
     <div>
       <input v-if="!success" v-model="email" id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto"
              placeholder="Email">
-      <button v-if="!success" type="submit" @click="signUp" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
+      <button v-if="!success" type="submit" @click.prevent="signUp" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
       <div class="input rounded-r-none w-12/12 sm:w-auto" v-if="success">
         <p>Success!</p>
       </div>
@@ -21,7 +21,7 @@
     data() {
       return {
          api: "https://2020.hyphen-hacks.com",
-      //  api: "http://localhost:3005",
+       // api: "http://localhost:3005",
         email: "",
         success: false,
         error: ""
