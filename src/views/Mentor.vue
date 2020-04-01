@@ -9,8 +9,9 @@
         <p class="faqText">Our quality mentors is a crucial factor in what sets Hyphen-Hacks apart from other hackathons. As a mentor you will create meaningful connections with high school students interested in programing. You will travel from team to team assisting students with questions they may have about the process of software creation.</p>
         <p class="faqText">Mentors get access to all meals for free as well as complimentary swag. If you need service hours Hyphen-Hacks can sign off on your time commitment.</p>
         <p class="faqText">If you don’t have prior knowledge about programming or software creation, you can still help out by volunteering.</p>
-
-        <div class="flex flex-row">
+        <p class="faqText">Mentor applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
+        <MailingList refferer="mentor page" class="w-full"></MailingList>
+        <div v-if="false" class="flex flex-row">
           <a class="btn mr-5" href="">Sign up to mentor</a>
           <router-link class="btn--outline" to="/volunteer">Volunteer</router-link>
         </div>
@@ -29,11 +30,13 @@
   // @ is an alias to /src
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
+  import MailingList from '@/components/mailinglist.vue'
   export default {
     name: 'Home',
     components: {
       Nav,
-      Footer
+      Footer,
+      MailingList
     }
   }
 </script>

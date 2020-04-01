@@ -10,19 +10,12 @@
       </div>
 
       <p class="font-semibold text-base sm:text-2xl z-50">October 17-18 2020 @ Lick-Wilmerding High School</p>
-      <div class="flex flex-col sm:flex-row justify-between items-end">
+      <div class="flex flex-col sm:flex-row justify-between items-end z-10">
         <div class="flex between w-full sm:w-auto">
           <router-link to="/apply" class="btn mr-auto sm:mx-0">Apply</router-link>
           <router-link to="/volunteer" class="btn--outline ml-auto sm:mx-3">Volunteer</router-link>
         </div>
-        <form @submit.prevent class="mt-5">
-          <label for="mailingList" class="text-sm text-semibold">Sign up for our mailing list</label>
-          <div>
-            <input id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto" placeholder="Email">
-            <button type="submit" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
-          </div>
-
-        </form>
+        <MailingList refferer="home page" class="mt-5 w-full sm:w-auto z-10"> </MailingList>
       </div>
     </header>
     <section class="header_image_container bg-primary container xl mx-auto  p-5 sm:px-10 ">
@@ -82,11 +75,12 @@
   // @ is an alias to /src
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
+  import MailingList from '@/components/mailinglist.vue'
 
   export default {
     name: 'Home',
     components: {
-      Nav, Footer
+      Nav, Footer, MailingList
     }
   }
 </script>

@@ -2,17 +2,19 @@
   <div>
     <Nav></Nav>
     <div class="infoPage container xl mx-auto  md:p-10">
-      <div class="w-full bg-primary h-1/2 p-10">
+      <div class="w-full bg-primary h-1/2 p-5 sm:p-10">
         <div id="applyBanner">
-          <h1 class="font-bold text-10xl">Apply</h1>
+          <h1 class="font-bold text-7xl sm:text-10xl">Apply</h1>
         </div>
       </div>
-      <div class="flex pt-10 items-center">
-        <div class="w-1/2 ">
+      <div class="flex flex-col md:flex-row pt-10 items-center">
+        <div class="md:w-1/2 p-5 md:p-0">
           <p class="faqText">Because Hyphen-Hacks is a free event, we must limit the number of people who get accepted into Hyphen-Hacks. Please complete our short application process to attend Hyphen-Hacks 2020.</p>
-          <a class="btn mt-5">Start Application</a>
+          <p class="faqText">Attendee applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
+          <MailingList refferer="applicant page"></MailingList>
+          <a v-if="false" class="btn mt-5">Start Application</a>
         </div>
-        <div class="w-1/2 p-10">
+        <div class="md:w-1/2 p-10">
           <img src="../assets/undraw_fill_forms_yltj.svg" alt="">
         </div>
       </div>
@@ -26,11 +28,13 @@
   // @ is an alias to /src
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
+  import MailingList from '@/components/mailinglist.vue'
   export default {
     name: 'Home',
     components: {
       Nav,
-      Footer
+      Footer,
+      MailingList
     }
   }
 </script>

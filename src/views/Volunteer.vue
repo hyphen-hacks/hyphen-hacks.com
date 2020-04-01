@@ -13,13 +13,14 @@
           service hours Hyphen-Hacks can sign off on your time commitment.</p>
         <p class="faqText">Volunteers get access to all meals for free as well as complimentary swag. If you need
           service hours Hyphen-Hacks can sign off on your time commitment.</p>
-
-        <div class="flex flex-row">
+        <p class="faqText">Volunteer applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
+        <MailingList refferer="volunteer page"></MailingList>
+        <div v-if="false" class="flex flex-row">
           <a class="btn mr-5" href="">Sign up to volunteer</a>
           <router-link to="/mentor" class="btn--outline">Mentor</router-link>
         </div>
       </div>
-      <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
+      <div class="mx-auto lg:p-4 flex-col flex justify-center items-center ">
         <img src="../assets/Ronan-3765.jpeg" alt="">
       </div>
     </div>
@@ -32,11 +33,13 @@
   // @ is an alias to /src
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
+  import MailingList from '@/components/mailinglist.vue'
   export default {
     name: 'Home',
     components: {
       Nav,
-      Footer
+      Footer,
+      MailingList
     }
   }
 </script>
