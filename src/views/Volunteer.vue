@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="mx-auto lg:p-4 flex-col flex justify-center items-center ">
-        <img src="../assets/Ronan-3765.jpeg" alt="">
+        <img src="../assets/Ronan-3765.jpg" alt="">
       </div>
     </div>
     </div>

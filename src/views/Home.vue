@@ -19,7 +19,7 @@
       </div>
     </header>
     <section class="header_image_container bg-primary container xl mx-auto  p-5 sm:px-10 ">
-      <img class="header_image" src="../assets/Ronan-3765.jpeg" alt="Hyphen-Hacks attendeees programming">
+      <img class="header_image" src="../assets/Ronan-3765.jpg" alt="Hyphen-Hacks attendeees programming">
 
     </section>
     <section class="container xl mx-auto pt-8 p-5 md:p-10">
@@ -54,8 +54,8 @@
         </div>
       </div>
       <h2 class="feature_headline">Prizes</h2>
-      <p class="feature_text">This year we have over $10,000 in prizes as well as sponsored products such as Adobe XD licences.</p>
-      <img src="../assets/2020attendees.jpeg" alt="">
+      <p class="feature_text">Projects will be judged by and receive feedback from an array of industry professionals. This years prizes are still being determined.</p>
+      <img src="../assets/2020attendees.jpg" alt="">
       <section class="my-5">
         <h2 class="feature_headline text-center">Apply for free</h2>
         <div class="flex justify-center mt-3 mb-3">
