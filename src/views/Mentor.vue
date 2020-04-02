@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
-        <img class="mx-auto" src="../assets/Ronan-3765.jpg" alt="">
+        <img class="mx-auto" src="../assets/mentors.jpg" alt="">
       </div>
     </div>
     </div>

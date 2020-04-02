@@ -11,7 +11,7 @@
           <p class="faqText">Anyone who is enrolled in a high school between the 9th and 12th grades may participate in Hyphen-Hacks.</p>
         </div>
         <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
-          <img class="mx-auto" src="../assets/Ronan-3765.jpg" alt="">
+          <img class="mx-auto" src="../assets/collchat.jpg" alt="">
         </div>
     </div>
     </div>
