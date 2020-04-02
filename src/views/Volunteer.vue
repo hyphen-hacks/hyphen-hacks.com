@@ -18,7 +18,11 @@
         </div>
       </div>
       <div class="mx-auto lg:p-4 flex-col flex justify-center items-center ">
-        <img src="../assets/lick.jpg" alt="">
+        <picture>
+          <source srcset="../assets/lick.webp" alt="Lick-Wilmerding campus" type="image/webp">
+          <img src="../assets/lick.jpg" alt="Lick-Wilmerding campus" type="image/jpg">
+        </picture>
+
       </div>
     </div>
     </div>
