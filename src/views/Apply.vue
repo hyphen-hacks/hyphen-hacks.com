@@ -9,11 +9,14 @@
       </div>
       <div class="flex flex-col md:flex-row pt-10 items-center">
         <div class="md:w-1/2 p-5 md:p-0">
-          <p class="faqText">Because Hyphen-Hacks is a free event, we must limit the number of people who get accepted into Hyphen-Hacks. Please complete our short application process to attend Hyphen-Hacks 2020.</p>
-          <p class="faqText">Attendee applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
-          <MailingList refferer="applicant page"></MailingList>
-          <a v-if="false" class="btn mt-5">Start Application</a>
+          <p class="faqText">Because Hyphen-Hacks is a free event, we must limit the number of people who get accepted
+            into Hyphen-Hacks. Please complete our short application process to attend Hyphen-Hacks 2020.</p>
+          <p class="faqText">Attendee applications are currently closed. Sign up for our mailing list to be notified
+            when they open.</p>
+          <MailingList v-if="!signups" refferer="applicant page"></MailingList>
+          <a v-if="signups" class="btn mt-5">Start Application</a>
         </div>
+
         <div class="md:w-1/2 p-10">
           <img src="../assets/undraw_fill_forms_yltj.svg" alt="">
         </div>
@@ -29,12 +32,18 @@
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
   import MailingList from '@/components/mailinglist.vue'
+
   export default {
     name: 'Home',
     components: {
       Nav,
       Footer,
       MailingList
+    },
+    data() {
+      return {
+        signups: this.$remoteConfig.getValue("attendeeSignUps") == "true"
+      }
     }
   }
 </script>

@@ -46,6 +46,9 @@
               this.success = true
               this.error = ""
               this.email = ""
+              this.$analytics.logEvent('signUpForMailingList', {
+              referer: this.refferer
+              });
             } else {
               console.log("error", res.error)
               this.error = res.error

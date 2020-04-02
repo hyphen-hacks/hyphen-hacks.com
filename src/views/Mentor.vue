@@ -10,8 +10,8 @@
         <p class="faqText">Mentors get access to all meals for free as well as complimentary swag. If you need service hours Hyphen-Hacks can sign off on your time commitment.</p>
         <p class="faqText">If you don’t have prior knowledge about programming or software creation, you can still help out by volunteering.</p>
         <p class="faqText">Mentor applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
-        <MailingList refferer="mentor page" class="w-full"></MailingList>
-        <div v-if="false" class="flex flex-row">
+        <MailingList v-if="!signups" refferer="mentor page" class="w-full"></MailingList>
+        <div v-if="signups" class="flex flex-row">
           <a class="btn mr-5" href="">Sign up to mentor</a>
           <router-link class="btn--outline" to="/volunteer">Volunteer</router-link>
         </div>
@@ -37,6 +37,11 @@
       Nav,
       Footer,
       MailingList
+    },
+    data() {
+      return {
+        signups: this.$remoteConfig.getValue("mentorSignUps") == "true"
+      }
     }
   }
 </script>
