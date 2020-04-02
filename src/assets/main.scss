@@ -1,5 +1,6 @@
 body {
   @apply bg-gray text-gray-lightest;
+  font-family: 'Chivo', 'sans-serif'
 }
 .nav_link {
   @apply mx-2 my-1 font-medium duration-200 no-underline ;
@@ -84,7 +85,9 @@ a:hover {
   text-align: right;
   right: 10%;
   top: 15%;
-
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
 
 }
 .header_image {
@@ -107,7 +110,7 @@ a:hover {
   }
 }
 .feature_headline {
-  @apply font-bold text-4xl mt-5;
+  @apply font-bold text-4xl mt-5 font-serif;
   @media (min-width:640px) {
     @apply text-8xl mt-16 ;
   }

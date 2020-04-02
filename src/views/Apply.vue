@@ -11,7 +11,7 @@
         <div class="md:w-1/2 p-5 md:p-0">
           <p class="faqText">Because Hyphen-Hacks is a free event, we must limit the number of people who get accepted
             into Hyphen-Hacks. Please complete our short application process to attend Hyphen-Hacks 2020.</p>
-          <p class="faqText">Attendee applications are currently closed. Sign up for our mailing list to be notified
+          <p class="faqText" v-if="!signups">Attendee applications are currently closed. Sign up for our mailing list to be notified
             when they open.</p>
           <MailingList v-if="!signups" refferer="applicant page"></MailingList>
           <a v-if="signups" class="btn mt-5">Start Application</a>

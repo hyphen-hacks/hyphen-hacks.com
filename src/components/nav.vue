@@ -2,7 +2,7 @@
   <nav class="flex flex-row items-center bg-gray-lighter p-5 flex-wrap">
     <router-link to="/" class="flex flex-row items-center mr-auto no-underline w-auto">
       <img class="h-8 sm:h-10 mr-1" src="../assets/logo.svg" alt="Hyphen-Hacks logo">
-      <h1 class="font-bold text-1xl sm:text-2xl no-underline text-white">Hyphen-Hacks 2020</h1>
+      <h1 class="font-bold text-1xl sm:text-2xl no-underline text-white ">Hyphen-Hacks 2020</h1>
     </router-link>
     <button class=" show-sm" @click="open = !open"><i v-if="!open" class="fas fa-bars"></i> <i v-if="open"
                                                                                                  class="fas fa-times"></i>

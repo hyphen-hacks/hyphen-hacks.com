@@ -29,7 +29,7 @@
 
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-3 text-center gap-4 items-center justify-between">
-      <a href="mailto:suport@hyphen-hacks.com" class="dark">suport@hyphen-hacks.com</a>
+      <a href="mailto:support@hyphen-hacks.com" class="dark">support@hyphen-hacks.com</a>
       <p>Website developed by <a target="_blank" class="dark font-bold" href="https://ronanfuruta.com">Ronan Furuta</a></p>
       <small>Website released under APL-2.0 License</small>
     </div>

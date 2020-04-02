@@ -2,6 +2,10 @@ module.exports = {
   theme: {
 
     extend: {
+      fontFamily: {
+          'serif': ['Space Mono', 'sans-serif'],
+            'sans': ['Chivo', 'sans-serif']
+      },
       fontSize: {
         '7xl': '5rem',
         '8xl': '6rem',
