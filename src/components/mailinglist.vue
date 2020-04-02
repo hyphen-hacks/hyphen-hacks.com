@@ -5,8 +5,8 @@
       <input v-if="!success" v-model="email" id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto"
              placeholder="Email">
       <button v-if="!success" type="submit" @click.prevent="signUp" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
-      <div class="input rounded-r-none w-12/12 sm:w-auto" v-if="success">
-        <p>Success!</p>
+      <div class="input rounded-r-none inline-block" v-if="success">
+        <p class="px-10">Success!</p>
       </div>
 
     </div>

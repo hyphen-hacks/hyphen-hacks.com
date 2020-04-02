@@ -4,7 +4,7 @@
     <div class="infoPage mx-auto container lg:p-10 flex pt-8 flex flex-col justify-center p-5">
       <div class="flex flex-col-reverse lg:flex-row lg:justify-between w-full">
       <div class="mx-auto md:pr-8 faqText sm:w-2/3">
-        <h1 class="font-bold text-5xl sm:text-7xl  text-primary">Contact</h1>
+        <h1 class="font-bold text-5xl sm:text-7xl  text-primary small-spacing font-serif">Contact</h1>
         <p>We are located at Lick-Wilmerding High School: 755 Ocean Ave San Francisco, CA 94112</p>
         <br>
         <p>We welcome your input! For general inquiries please email <a href="mailto:support@hyphen-hacks.com">support@hyphen-hacks.com</a></p>

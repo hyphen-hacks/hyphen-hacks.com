@@ -4,7 +4,7 @@
     <div class="infoPage container xl mx-auto  md:p-10">
       <div class="w-full bg-primary h-1/2 p-5 sm:p-10">
         <div id="applyBanner">
-          <h1 class="font-bold text-7xl sm:text-10xl">Apply</h1>
+          <h1 class="font-bold text-7xl sm:text-10xl small-spacing font-serif">Apply</h1>
         </div>
       </div>
       <div class="flex flex-col md:flex-row pt-10 items-center">

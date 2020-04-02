@@ -2,67 +2,85 @@ body {
   @apply bg-gray text-gray-lightest;
   font-family: 'Chivo', 'sans-serif'
 }
+
 .nav_link {
   @apply mx-2 my-1 font-medium duration-200 no-underline ;
 
 }
+
 .hide-sm {
   @apply hidden;
-  @media (min-width:770px) {
+  @media (min-width: 770px) {
     @apply inline;
   }
 }
+
 .show-sm {
   @apply inline;
-  @media (min-width:770px) {
+  @media (min-width: 770px) {
     @apply hidden;
   }
 }
+
 .nav_link:hover {
-  @apply  text-gray-hover;
+  @apply text-gray-hover;
 }
+
 .btn {
   @apply text-gray-lightest px-5 py-2 bg-primary border-primary border-4 font-bold rounded-sm duration-200 no-underline text-center;
 }
+
 .btn--dark {
   @apply text-gray-lightest px-5 py-2 bg-gray border-gray border-4 font-bold rounded-sm duration-200 no-underline text-center;
 
 }
+
 .btn--dark:hover {
   @apply text-gray-lightest bg-gray-lighter border-gray-lighter;
 
 }
+
 .btn:hover {
   @apply text-gray-lightest bg-primary-darker  border-primary-darker;
 }
+
 .btn--outline {
   @apply text-gray-lightest px-5 py-2 border-4 border-primary font-bold rounded-sm duration-200 no-underline text-center;
 }
+
 .btn--outline:hover {
   @apply text-gray-lightest bg-primary-darker;
 }
+
 .home_header {
   height: 80vh;
 }
+
 .input {
   @apply bg-gray-form p-2 border-4 border-gray-form rounded-sm duration-200;
 }
+
 .input:hover {
   @apply bg-gray-form_hover border-gray-form_hover;
 
 }
+
 a {
   @apply text-primary underline;
 }
+
 a.dark {
   @apply text-gray underline;
 }
+
 a.dark:hover {
   @apply text-gray-lighter underline;
 }
+
 a:hover {
   @apply text-gray-hover;
 }
+
 .twentyTwentyHeader {
   position: absolute;
   @apply ml-auto font-black text-black;
@@ -76,6 +94,7 @@ a:hover {
 
   }
 }
+
 .twentyTwentyHeaderPlaceholder {
   position: absolute;
   @apply ml-auto font-black text-black;
@@ -90,6 +109,7 @@ a:hover {
   user-select: none; /* Standard syntax */
 
 }
+
 .header_image {
   position: relative;
   margin-top: -8rem;
@@ -97,33 +117,43 @@ a:hover {
   width: 90%;
   margin-bottom: 3rem;
   @apply mx-auto;
-  @media (max-width:640px) {
+  @media (max-width: 640px) {
     width: 100%;
     margin-top: -5rem;
   }
 }
+
 .header_image_container {
   margin-top: 8rem;
-  @media (max-width:640px) {
+  @media (max-width: 640px) {
 
     margin-top: 5rem;
   }
 }
+
+.small-spacing {
+  letter-spacing: -0.03em;
+}
+
 .feature_headline {
   @apply font-bold text-4xl mt-5 font-serif;
-  @media (min-width:640px) {
+  letter-spacing: -0.03em;
+  @media (min-width: 640px) {
     @apply text-8xl mt-16 ;
   }
 }
+
 .feature_text {
   @apply font-bold text-base mb-5 max-w-4xl;
-  @media (min-width:640px) {
+  @media (min-width: 640px) {
     @apply text-3xl mb-16;
   }
 }
+
 .feature_text.right {
   @apply ml-auto text-right;
 }
+
 .infoPage {
   min-height: 70vh;
 }
@@ -131,18 +161,23 @@ a:hover {
 
 .faqHeader {
   @apply font-bold text-2xl mt-5 mb-2;
-  @media (min-width:640px) {
-    @apply  text-4xl;
+  @media (min-width: 640px) {
+    @apply text-4xl;
   }
 }
 
 .faqText {
   @apply font-bold  mb-5;
 }
+
 #applyBanner {
   width: 100%;
   height: 40vh;
-  background: url("./Ronan-3765.jpg") no-repeat center center;
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+              ),
+              url("./Ronan-3765.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;

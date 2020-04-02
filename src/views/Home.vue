@@ -41,12 +41,12 @@
         projects for the whole time, or you can choose to attend one of our many workshops.</p>
       <div class="bg-primary p-5 sm:p-16 p-7 sm:py-20 flex flex-col sm:flex-row text-black font-semibold my-10 sm:my-16">
         <div class="sm:mr-16">
-          <h3 class="text-4xl">Food!</h3>
+          <h3 class="text-4xl font-serif small-spacing">Food!</h3>
           <p class="text-base">We will serve four meals, starting with lunch on Saturday. Of course, we always have snacks available, including a special midnight snack!</p>
         </div>
         <div class="sm:ml-16 mt-5 sm:mt-0">
-          <h3 class="text-4xl">Fun!</h3>
-          <p class="text-base">At Hyphen-Hacks, we have tons of fun activities, including laser tag, ping pong, and board games. We also provide team building workshops to help foster a sense of community.</p>
+          <h3 class="text-4xl font-serif small-spacing">Fun!</h3>
+          <p class="text-base ">At Hyphen-Hacks, we have tons of fun activities, including laser tag, ping pong, and board games. We also provide team building workshops to help foster a sense of community.</p>
         </div>
       </div>
       <h2 class="feature_headline">Prizes</h2>
