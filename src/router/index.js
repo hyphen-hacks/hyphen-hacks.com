@@ -7,6 +7,7 @@ import FAQ from '../views/FAQ.vue'
 import Mentor from '../views/Mentor.vue'
 import Apply from '../views/Apply.vue'
 import Contact from '../views/Contact.vue'
+import fourohfour from '../views/404.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -114,6 +115,24 @@ const routes = [
         {
           property: 'og:description',
           content: 'Contact Hyphen-Hacks'
+        }
+      ]
+    }
+  },
+  {
+    path: '*',
+    name: '404',
+    component: fourohfour,
+    meta: {
+      title: 'Hyphen-Hacks | 404',
+      metaTags: [
+        {
+          name: 'description',
+          content: '404 Hyphen-Hacks'
+        },
+        {
+          property: 'og:description',
+          content: '404 Hyphen-Hacks'
         }
       ]
     }
