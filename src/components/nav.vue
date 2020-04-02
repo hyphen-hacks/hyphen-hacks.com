@@ -4,7 +4,7 @@
       <img class="h-8 sm:h-10 mr-3" src="../assets/logo.svg" alt="Hyphen-Hacks logo">
       <h1 class="font-bold text-1xl sm:text-2xl no-underline text-white ">Hyphen-Hacks 2020</h1>
     </router-link>
-    <button class=" show-sm" @click="open = !open"><i v-if="!open" class="fas fa-bars"></i> <i v-if="open"
+    <button class=" show-sm" @click="open = !open" aria-label="Show navigation menu"><i v-if="!open" class="fas fa-bars"></i> <i v-if="open"
                                                                                                  class="fas fa-times"></i>
     </button>
     <a class="nav_link hide-sm" href="/#mission">MISSION</a>
