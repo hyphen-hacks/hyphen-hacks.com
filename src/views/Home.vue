@@ -9,7 +9,7 @@
         <p class="font-semibold text-xl md:text-3xl lg:text-5xl">24 hour programming competition with learning opportunities for all</p>
       </div>
 
-      <p class="font-semibold text-base sm:text-2xl z-50">October 17-18 2020 at Lick-Wilmerding High School</p>
+      <p class="font-semibold text-base sm:text-2xl z-50">Fall 2020 at Lick-Wilmerding High School</p>
       <div class="flex flex-col sm:flex-row justify-between items-end z-10">
         <div class="flex between w-full sm:w-auto">
           <router-link to="/apply" class="btn mr-auto sm:mx-0">Apply</router-link>
