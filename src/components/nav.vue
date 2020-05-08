@@ -13,6 +13,7 @@
     <router-link to="/volunteer" class="nav_link btn--outline hide-sm">Volunteer</router-link>
     <router-link class="nav_link btn--outline hide-sm" to="/mentor">Mentor</router-link>
     <router-link class="nav_link btn hide-sm" to="/apply">Apply</router-link>
+    <a v-if="showLogin" :href="navLink" class="nav_link btn--dark hide-sm">LOGIN</a>
     <div v-if="open" class="md:hiden flex-col flex pt-5 w-full">
 
       <a class="nav_link" href="/#mission">MISSION</a>
@@ -21,6 +22,8 @@
       <router-link to="/volunteer" class="nav_link btn--outline max-w-xl mx-auto">Volunteer</router-link>
       <router-link class="nav_link btn--outline max-w-xl mx-auto" to="/mentor">Mentor</router-link>
       <router-link class="nav_link btn max-w-xl mx-auto" to="/apply">Apply</router-link>
+      <a v-if="showLogin" :href="navLink" class=" nav_link btn--dark">LOGIN</a>
+
     </div>
   </nav>
 </template>
@@ -30,6 +33,14 @@
     data() {
       return {
         open: false
+      }
+    },
+    computed: {
+      navLink() {
+        return this.$remoteConfig.getValue("loginLink")? this.$remoteConfig.getValue("loginLink") : "https://my.hyphen-hacks.com"
+      },
+      showLogin() {
+        return this.$remoteConfig.getValue("showLogin") == "true"
       }
     }
   }

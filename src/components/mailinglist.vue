@@ -2,7 +2,7 @@
   <form @submit.prevent="signUp">
     <label for="mailingList" class="text-sm text-semibold">Sign up for our mailing list</label>
     <div>
-      <input v-if="!success" v-model="email" id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto"
+      <input required v-if="!success" v-model="email" id="mailingList" type="email" class=" input rounded-r-none w-7/12 sm:w-auto"
              placeholder="Email">
       <button v-if="!success" type="submit" @click.prevent="signUp" class="btn  rounded-l-none w-5/12 sm:w-auto">Sign Up</button>
       <div class="input rounded-r-none inline-block" v-if="success">
