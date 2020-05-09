@@ -14,14 +14,14 @@
         <MailingList v-if="!signups" refferer="volunteer page"></MailingList>
         <div v-if="signups" class="flex flex-row">
           <a class="btn mr-5" href="">Sign up to volunteer</a>
-          <router-link to="/mentor" class="btn--outline">Mentor</router-link>
+          <g-link to="/mentor" class="btn--outline">Mentor</g-link>
         </div>
       </div>
       <div class="mx-auto lg:p-4 flex-col flex justify-center items-center ">
-        <picture>
-          <source srcset="../assets/lick.webp" alt="Lick-Wilmerding campus" type="image/webp">
-          <img src="../assets/lick.jpg" alt="Lick-Wilmerding campus" type="image/jpg">
-        </picture>
+
+
+          <g-image src="../assets/lick.jpg" alt="Lick-Wilmerding campus" type="image/jpg">
+          </g-image>
 
       </div>
     </div>
@@ -37,6 +37,13 @@
   import MailingList from '@/components/mailinglist.vue'
   export default {
     name: 'Home',
+    metaInfo: {
+      title: 'Volunteer',
+      meta: [
+        { name: 'description', content: 'Volunteers are a key part of Hyphen-Hacks. As a volunteer you will assist the Hyphen-Hacks team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to support Hyphen-Hacks with out any prior knowledge.' },
+        { name: 'og:description', content: 'Volunteers are a key part of Hyphen-Hacks. As a volunteer you will assist the Hyphen-Hacks team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to support Hyphen-Hacks with out any prior knowledge.' }
+      ]
+    },
     components: {
       Nav,
       Footer,
@@ -44,7 +51,7 @@
     },
     data() {
       return {
-       signups: this.$remoteConfig.getValue("volunteerSignUps") == "true"
+       signups: false
       }
     }
   }

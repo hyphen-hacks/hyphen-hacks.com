@@ -34,7 +34,14 @@
   import MailingList from '@/components/mailinglist.vue'
 
   export default {
-    name: 'Home',
+    metaInfo: {
+      title: 'Apply',
+      meta: [
+        { name: 'description', content: 'Apply to attend Hyphen-Hacks the free 24 hour high school hackathon.' },
+        { name: 'og:description', content: 'Apply to attend Hyphen-Hacks the free 24 hour high school hackathon.' }
+      ]
+    },
+    name: 'Apply',
     components: {
       Nav,
       Footer,
@@ -42,7 +49,7 @@
     },
     data() {
       return {
-        signups: this.$remoteConfig.getValue("attendeeSignUps") == "true"
+        signups: false
       }
     }
   }

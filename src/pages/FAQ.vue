@@ -11,10 +11,9 @@
           <p class="faqText">Anyone who is enrolled in a high school between the 9th and 12th grades may participate in Hyphen-Hacks.</p>
         </div>
         <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
-          <picture>
-            <source class="mx-auto" type="image/webp" srcset="../assets/collchat.webp" alt="four Hyphen-Hacks 2019 winners">
-            <img class="mx-auto" type="image/jpg" src="../assets/collchat.jpg" alt="four Hyphen-Hacks 2019 winners">
-          </picture>
+
+          <g-image class="mx-auto" type="image/jpg" src="../assets/collchat.jpg" alt="four Hyphen-Hacks 2019 winners"></g-image>
+
 
         </div>
     </div>
@@ -28,6 +27,13 @@
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
   export default {
+    metaInfo: {
+      title: 'FAQ',
+      meta: [
+        { name: 'description', content: 'Frequently asked questions about Hyphen-Hacks and hackathons.' },
+        { name: 'og:description', content: 'Frequently asked questions about Hyphen-Hacks and hackathons.' }
+      ]
+    },
     name: 'FAQ',
     components: {
       Nav,

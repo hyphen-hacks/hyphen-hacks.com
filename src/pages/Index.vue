@@ -12,17 +12,16 @@
       <p class="font-semibold text-base sm:text-2xl z-50">Fall 2020 at Lick-Wilmerding High School</p>
       <div class="flex flex-col sm:flex-row justify-between items-end z-10">
         <div class="flex between w-full sm:w-auto">
-          <router-link to="/apply" class="btn mr-auto sm:mx-0">Apply</router-link>
-          <router-link to="/volunteer" class="btn--outline ml-auto sm:mx-3">Volunteer</router-link>
+          <g-link to="/apply" class="btn mr-auto sm:mx-0">Apply</g-link>
+          <g-link to="/volunteer" class="btn--outline ml-auto sm:mx-3">Volunteer</g-link>
         </div>
         <MailingList refferer="home page" class="mt-5 w-full sm:w-auto z-10"> </MailingList>
       </div>
     </header>
     <section class="header_image_container bg-primary container xl mx-auto  p-5 sm:px-10 ">
-      <picture >
-        <source class="header_image"  srcset="../assets/Ronan-3765.webp" type="image/webp" alt="Hyphen-Hacks attendeees programming">
-        <img class="header_image"  src="../assets/Ronan-3765.jpg" alt="Hyphen-Hacks attendeees programming" type="image/jpg">
-      </picture>
+
+      <g-image class="header_image"  src="../assets/Ronan-3765.jpg" alt="Hyphen-Hacks attendeees programming" type="image/jpg"></g-image>
+
 
 
     </section>
@@ -33,10 +32,9 @@
         learn new skills while collaborating on new inventions.</p>
       <h2 class="feature_headline text-right">Learn</h2>
       <p class="feature_text right">At Hyphen-Hacks, you will get the opportunity to receive mentorship from industry professionals, take classes ranging from beginner topics to advanced techniques, and meet like-minded students from around the Bay Area.</p>
-      <picture>
-        <source srcset="../assets/hh-team.webp" class="my-10" type="image/webp" alt="2019 Hyphen-Hacks team">
-        <img src="../assets/hh-team.jpg" class="my-10" alt="2019 Hyphen-Hacks team" type="image/jpg">
-      </picture>
+
+        <g-image src="../assets/hh-team.jpg" class="my-10" alt="2019 Hyphen-Hacks team" type="image/jpg"></g-image>
+
 
       <h2 class="feature_headline">Community</h2>
       <p class="feature_text">We strive to foster a strong, inclusive community. Whether this is your first time programming or your tenth hackathon, we want you to feel included and supported.</p>
@@ -59,10 +57,9 @@
       </div>
       <h2 class="feature_headline">Prizes</h2>
       <p class="feature_text">Projects will be judged by, and receive feedback from, an array of industry professionals. This year's prizes are still being determined.</p>
-      <picture >
-        <source srcset="../assets/2020attendees.webp" type="image/webp" alt="2019 Hyphen-Hacks winners">
-        <img src="../assets/2020attendees.jpg" type="image/jpg" alt="2019 Hyphen-Hacks winners">
-      </picture>
+
+        <g-image src="../assets/2020attendees.jpg" type="image/jpg" alt="2019 Hyphen-Hacks winners"></g-image>
+
 
       <section class="my-5">
         <h2 class="feature_headline text-center">Apply for free!</h2>
@@ -87,6 +84,13 @@
 
   export default {
     name: 'Home',
+    metaInfo: {
+      title: 'Hyphen-Hacks | 24 hour hackathon for high school students',
+      meta: [
+        { name: 'description', content: 'Hyphen-Hacks is a 24 hour hackathon for High School Students interested in programming with of all levels of experience' },
+        { name: 'og:description', content: 'Hyphen-Hacks is a 24 hour hackathon for High School Students interested in programming with of all levels of experience' }
+      ]
+    },
     components: {
       Nav, Footer, MailingList
     }

@@ -13,18 +13,18 @@
         <div class="sm:mx-auto">
         <h4 class="font-bold">Be a part of Hyphen-Hacks</h4>
         <div class="flex-col flex flex-wrap">
-          <router-link class="btn--dark mr-auto inline my-1" to="/apply">Apply</router-link>
-          <router-link class="btn--dark mr-auto inline my-1" to="/volunteer">Volunteer</router-link>
-          <router-link class="btn--dark mr-auto inline my-1" to="/mentor">Mentor</router-link>
+          <g-link class="btn--dark mr-auto inline my-1" to="/apply">Apply</g-link>
+          <g-link class="btn--dark mr-auto inline my-1" to="/volunteer">Volunteer</g-link>
+          <g-link class="btn--dark mr-auto inline my-1" to="/mentor">Mentor</g-link>
         </div>
         </div>
       </div >
       <div class="flex-col flex justify-between text-right sm:items-center sm:text-center pt-10  h-full">
 
-        <router-link to="/" class="dark">Home</router-link>
-        <router-link to="/contact" class="dark">Contact</router-link>
+        <g-link to="/" class="dark">Home</g-link>
+        <g-link to="/contact" class="dark">Contact</g-link>
         <a href="/#mission" class="dark">Mission</a>
-        <router-link to="/faq" class="dark">FAQ</router-link>
+        <g-link to="/faq" class="dark">FAQ</g-link>
       </div>
 
 

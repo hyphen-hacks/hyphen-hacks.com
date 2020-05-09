@@ -26,6 +26,13 @@
 
   export default {
     name: 'Home',
+    metaInfo: {
+      title: '404',
+      meta: [
+        { name: 'description', content: '404' },
+        { name: 'og:description', content: '404' }
+      ]
+    },
     components: {
       Nav,
       Footer,
@@ -33,7 +40,7 @@
     },
     data() {
       return {
-        signups: this.$remoteConfig.getValue("mentorSignUps") == "true"
+       // signups: this.$remoteConfig.getValue("mentorSignUps") == "true"
       }
     }
   }

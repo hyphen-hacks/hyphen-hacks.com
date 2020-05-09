@@ -1,59 +1,58 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-cypress" target="_blank" rel="noopener">e2e-cypress</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div>
+    <Nav></Nav>
+    <div class="infoPage mx-auto container lg:p-10 flex pt-8 flex flex-col justify-center p-5">
+      <div class="flex flex-col-reverse lg:flex-row lg:justify-between w-full">
+      <div class="mx-auto">
+        <h1 class="font-bold text-5xl sm:text-7xl text-primary small-spacing font-serif">Volunteer</h1>
+
+        <p class="faqText">Volunteers are a key part of Hyphen-Hacks. As a volunteer, you will assist the Hyphen-Hacks team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to support Hyphen-Hacks without any prior knowledge.</p>
+        <p class="faqText">In addition, volunteers get access to all meals for free as well as complimentary swag. If you need service hours, the Hyphen-Hacks team can sign off on your time commitment.</p>
+        <p class="faqText">Volunteers get access to all meals for free as well as complimentary swag. If you need
+          service hours Hyphen-Hacks can sign off on your time commitment.</p>
+        <p class="faqText" v-if="!signups">Volunteer applications are currently closed. Sign up for our mailing list to be notified when they open.</p>
+        <MailingList v-if="!signups" refferer="volunteer page"></MailingList>
+        <div v-if="signups" class="flex flex-row">
+          <a class="btn mr-5" href="">Sign up to volunteer</a>
+          <g-link to="/mentor" class="btn--outline">Mentor</g-link>
+        </div>
+      </div>
+      <div class="mx-auto lg:p-4 flex-col flex justify-center items-center ">
+
+
+          <g-image src="../assets/lick.jpg" alt="Lick-Wilmerding campus" type="image/jpg">
+          </g-image>
+
+      </div>
+    </div>
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  // @ is an alias to /src
+  import Nav from '@/components/nav.vue'
+  import Footer from '@/components/footer.vue'
+  import MailingList from '@/components/mailinglist.vue'
+  export default {
+    name: 'Home',
+    metaInfo: {
+      title: 'Volunteer',
+      meta: [
+        { name: 'description', content: 'Volunteers are a key part of Hyphen-Hacks. As a volunteer you will assist the Hyphen-Hacks team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to support Hyphen-Hacks with out any prior knowledge.' },
+        { name: 'og:description', content: 'Volunteers are a key part of Hyphen-Hacks. As a volunteer you will assist the Hyphen-Hacks team in preparing meals, directing attendees, and monitoring spaces. Volunteering is a great way for you to support Hyphen-Hacks with out any prior knowledge.' }
+      ]
+    },
+    components: {
+      Nav,
+      Footer,
+      MailingList
+    },
+    data() {
+      return {
+       signups: false
+      }
+    }
   }
-}
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>

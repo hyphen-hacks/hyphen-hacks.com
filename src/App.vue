@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <router-view/>
   </div>
 </template>
@@ -8,7 +7,7 @@
   export  default {
     name: "app",
     created() {
-      this.$remoteConfig.fetchAndActivate()
+     // this.$remoteConfig.fetchAndActivate()
       //console.log(this.$remoteConfig.getValue("volunteerSignUps"))
     }
   }

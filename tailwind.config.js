@@ -3,8 +3,9 @@ module.exports = {
 
     extend: {
       fontFamily: {
-          'serif': ['Space Mono', 'sans-serif'],
-            'sans': ['Chivo', 'sans-serif']
+        'serif': ['Space Mono', 'sans-serif'],
+        'sans': ['Chivo', 'sans-serif'],
+        'body': ['Chivo', 'sans-serif']
       },
       fontSize: {
         '7xl': '5rem',

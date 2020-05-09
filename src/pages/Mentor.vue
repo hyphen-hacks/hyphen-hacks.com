@@ -14,7 +14,7 @@
             need service hours, the Hyphen-Hacks team can sign off on your time commitment.</p>
           <p class="faqText">If you don’t have prior knowledge of programming or software development, you can still
             help us out by
-            <router-link to="/volunteer">volunteering</router-link>
+            <g-link to="/volunteer">volunteering</g-link>
             .
           </p>
           <p class="faqText" v-if="!signups">Mentor applications are currently closed. Sign up for our mailing list to
@@ -22,14 +22,13 @@
           <MailingList v-if="!signups" refferer="mentor page" class="w-full"></MailingList>
           <div v-if="signups" class="flex flex-row">
             <a class="btn mr-5" href="">Sign up to mentor</a>
-            <router-link class="btn--outline" to="/volunteer">Volunteer</router-link>
+            <g-link class="btn--outline" to="/volunteer">Volunteer</g-link>
           </div>
         </div>
         <div class="mx-auto lg:p-4 flex-col flex justify-center items-center">
-          <picture>
-            <source class="mx-auto" srcset="../assets/mentors.webp" alt="Hyphen-Hacks Mentor helping a student" type="image/webp">
-            <img class="mx-auto" src="../assets/mentors.jpg" alt="Hyphen-Hacks Mentor helping a student" type="image/jpg">
-          </picture>
+
+            <g-image class="mx-auto" src="../assets/mentors.jpg" alt="Hyphen-Hacks Mentor helping a student" type="image/jpg"></g-image>
+
 
         </div>
       </div>
@@ -47,6 +46,13 @@
 
   export default {
     name: 'Home',
+    metaInfo: {
+      title: 'Mentor',
+      meta: [
+        { name: 'Our quality mentors is a crucial factor in what sets Hyphen-Hacks apart from other hackathons. As a mentor you will create meaningful connections with high school students interested in programing. You will travel from team to team assisting students with questions they may have about the process of software creation.' },
+        { name: 'og:description', content: 'Our quality mentors is a crucial factor in what sets Hyphen-Hacks apart from other hackathons. As a mentor you will create meaningful connections with high school students interested in programing. You will travel from team to team assisting students with questions they may have about the process of software creation.' }
+      ]
+    },
     components: {
       Nav,
       Footer,
@@ -54,7 +60,7 @@
     },
     data() {
       return {
-        signups: this.$remoteConfig.getValue("mentorSignUps") == "true"
+        signups:false
       }
     }
   }

@@ -26,6 +26,13 @@
   import Nav from '@/components/nav.vue'
   import Footer from '@/components/footer.vue'
   export default {
+    metaInfo: {
+      title: 'Contact',
+      meta: [
+        { name: 'description', content: 'Contact Hyphen-Hacks' },
+        { name: 'og:description', content: 'Contact Hyphen-Hacks' }
+      ]
+    },
     name: 'Home',
     components: {
       Nav,
