@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "cache-loader": "^4.1.0",
     "gridsome": "^0.7.0",
     "tailwindcss": "^1.4.5"
   },
